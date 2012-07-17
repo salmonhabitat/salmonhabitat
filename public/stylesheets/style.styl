@@ -1,0 +1,57 @@
+// ===== COLORS =====
+
+// Standard colors
+$primary = #535554
+$secondary = #7C838B
+
+// O yeaaa...
+$hilite = #FFE06B
+$brand = #3E66A1
+$structure = #e2e2e2
+
+// ===== TYPOGRAPHY =====
+
+h1, h2, h3 
+  font-family "franklin-gothic-urw-con-sc", sans-serif
+  color $primary
+
+li, p
+  font-family "franklin-gothic-urw-cond", sans-serif
+  color $secondary
+
+a
+  color $primary
+  text-decoration none
+  &:hover
+    color $hilite
+
+p, li
+  font-size 0.9rem
+
+h2
+  border-bottom 2px solid $structure
+
+nav
+  li
+    font-weight bold
+    font-size 1.2rem
+    margin 0.25em 0
+
+// ===== STRUCTURE =====
+
+body
+  margin 0
+  padding 0
+
+div.container
+  padding 1em
+  margin 0 auto
+
+// ===== MOBILE =====
+
+// ===== DESKTOP =====
+
+@media screen and (min-width: 481px)
+  div.container
+    width 720px
+  

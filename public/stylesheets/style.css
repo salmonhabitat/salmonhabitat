@@ -1,0 +1,43 @@
+h1,
+h2,
+h3 {
+  font-family: "franklin-gothic-urw-con-sc", sans-serif;
+  color: #535554;
+}
+li,
+p {
+  font-family: "franklin-gothic-urw-cond", sans-serif;
+  color: #7c838b;
+}
+a {
+  color: #535554;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffe06b;
+}
+p,
+li {
+  font-size: 0.9rem;
+}
+h2 {
+  border-bottom: 2px solid #e2e2e2;
+}
+nav li {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0.25em 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+div.container {
+  padding: 1em;
+  margin: 0 auto;
+}
+@media screen and (min-width: 481px) {
+  div.container {
+    width: 720px;
+  }
+}

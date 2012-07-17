@@ -1,0 +1,31 @@
+extends layout
+
+block content
+
+  include includes/head
+
+  div.content
+
+    p Practical, action oriented work. Plus some more description, etc.
+    
+    nav
+      ul
+        li
+          a(href='#arches') Open-Arch Culverts
+        li
+          a(href='#lwd') Large Woody Debris
+        li
+          a(href='#misc') Bank stabilization, tree planting, etc.
+
+    div.map
+      img(src='http://placehold.it/350x150')
+
+    section(id="arches")
+      h2 Open-Arch Culverts
+
+    section(id="lwd")
+      h2 Large Woody Debris
+
+    section(id="misc")
+      h2 Other Projects
+
