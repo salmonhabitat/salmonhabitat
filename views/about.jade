@@ -1,107 +1,111 @@
 extends layout
-
 block content
 
-  include includes/head
+  h1= title
   
-  div.content
+  nav.page
+    ul
+      li
+        a(href="#mission") Our Mission
+      li
+        a(href="#us") Who We Are
+      li
+        a(href="#board") Board of Directors
 
-    nav
-      ul
-        li
-          a(href='#mission') Our Mission
-        li
-          a(href='#us') Who We Are
-        li
-          a(href='#board') Our Board
+  section#mission
+    h2 Our Mission
 
-    section
-      h2(id="mission") Our Mission
-      p We’re a nonprofit 501(c)(3) looking to restore fish passage and natural stream function to benefit Atlantic salmon and other native fishes (SHARE stands for Salmon Habitat and River Enhancement). Since 2005, we’ve improved and/or opened up A LOT of previously  inaccessible habitat – over 100 miles (2800+ habitat units).  While our current on-the-ground restoration focus is the Downeast coastal region, we have expanded other facets of our program into other areas of the state (e.g. outreach)
+    p Hi! We're SHARE, or Salmon Habitat and River Enhancement.
+    p 
+      | We’re a nonprofit 501(c)(3) looking to restore fish passage and 
+      | natural stream function to benefit Atlantic salmon and other 
+      | native fishes. Since 2005, we’ve improved and/or opened up A LOT of 
+      | previously  inaccessible habitat – over 100 miles (2800+ habitat units).
+    p 
+      | Formed in 1994 by stakeholders with widely different interests, goals 
+      | and viewpoints, SHARE was created as a cooperative forum to contribute 
+      | to Atlantic salmon recovery via habitat restoration. Membership is 
+      | open to all stakeholders and members are expected to abide by a set 
+      | of guidelines based on voluntary participation and cooperation, mutual 
+      | respect and commitment to SHARE’s mission. Goodwill among members 
+      | is maintained by remaining neutral on political issues and focusing 
+      | on win-win opportunities from a land management and conservation 
+      | standpoint.
 
-      p Formed in 1994 by stakeholders with widely different interests, goals and viewpoints, SHARE was created as a cooperative forum to contribute to Atlantic salmon recovery via habitat restoration. Membership is open to all stakeholders and members are expected to abide by a set of guidelines based on voluntary participation and cooperation, mutual respect and commitment to SHARE’s mission. Goodwill among members is maintained by remaining neutral on political issues and focusing on win-win opportunities from a land management and conservation standpoint.
+  section#us
+    h2 Who We Are
 
-      p Of the six coastal watersheds in the Downeast coastal region of Maine actively managed for Atlantic salmon, these five have extant (albeit remnant) populations of river-specific Atlantic salmon populations. However, with the 2009 expanded listing of Atlantic salmon as endangered in Maine’s larger rivers (the Penobscot, Androscoggin and Kennebec) SHARE is exploring ways to expand facets of its program into a larger geographical area while retaining capacity to restore habitat for salmon and other native species at a focused landscape scale. For example, over the past two years, SHARE has drawn hundreds of students (K12 and college) and fisheries/forestry professionals from around the state into its restoration program via training workshops, informational forums, volunteer opportunities and intensive summer internships.
+    div.person
+      h3 Steve Koenig
+      p.title The Boss
+      img(src='images/Steve.jpg')
 
-      p
+    div.person
+      h3 Jacques Tardie
+      p.title Data
+      img(src='images/Jacques.jpg')
 
-    section
-      h2(id="us") Who We Are
+    div.person
+      h3 Katrina Mueller
+      p.title Outreach
+      img(src='images/Katrina.jpg')
 
-      p The success of SHARE’s on-the-ground program is a product of landowner support and cooperation, member commitments of staff and technical assistance, engaged regulators, members’ commitment to SHARE’s mission and operating principles, and a cadre of enthusiastic student and professional volunteers, partners and SHARE’s staff
+    div.person
+      h3 Wes Ashe
+      p.title Research
+      img(src='images/Wes.jpg')
 
-      p Funding, technical and volunteer support come from various sources and partners including landowners, NOAA Restoration Center, U.S. Fish and Wildlife Service and its Maine Fishery Resources Office, USDA Natural Resources Conservation Service, Eastern Brook Trout Joint Venture, Washington Academy High School, Downeast Lakes Land Trust, University of Maine system, and the State of Maine’s Bureau of Sea-Run Fisheries and Habitat, Bureau of Parks and Lands, Department of Environmental Protection, and Corporate Wetlands Restoration Partnership.
+    p The success of SHARE’s on-the-ground program is a product of landowner support and cooperation, member commitments of staff and technical assistance, engaged regulators, members’ commitment to SHARE’s mission and operating principles, and a cadre of enthusiastic student and professional volunteers, partners and SHARE’s staff
 
-      div.person
-        h3 Steve Koenig
-        img(src='http://placehold.it/150x150')
-        p Steven Koenig has been acting as SHARE’s Executive Director since 2001, and also as a general contractor for its restoration program since SHARE’s first pilot restoration project in 2005. In addition to being DEP-certified in Erosion and Sediment Control Practices and trained by the U.S. Forest Service in Natrual Stream Channel Design, Steven has a Bachelor’s of Science degree in cellular biology from the University of Michigan, and has studied oceaongraphy and limnology at the University of Wisconsin and fish physiology at West Virginia university.
+  section#board
+    h2 Board of Directors
 
-      div.person
-        h3 Jacques Tardie
-        img(src='http://placehold.it/150x150')
-        p Jacques has been with SHARE since 2009.
+    div.person
+      p.name Joan Trial
+      p 
+        a(href='http://www.maine.gov/dmr/index.htm') Maine DMR
 
-      div.person
-        h3 Katrina Mueller
-        img(src='http://placehold.it/150x150')
-        p Katrina has been working with Project SHARE since July of 2008. Her primary responsibilites have included grant writing and management, planning, and implementing habitat monitoring protocols, and creating an active outreach program that links students and professionals into SHARE’s on-the-ground restoration program via hands-on workshops, internship/volunteer opportunities and conferences.
+    div.person
+      p.name Bill Archambault 
+      p 
+        a(href='http://www.fws.gov/') US Fish & Wildlife
 
-      div.person
-        h3 Wes Ashe
-        img(src='http://placehold.it/150x150')
-        p Wes Ashe is currently working as a Graduate Assistant in the Wildlife Ecology Department at the University of Maine, Orono on a project focusing on the growth and survival of juvenile Atlantic Salmon in first and second order streams throughout the Machias River watershed. Headwater streams have been shown to provide more ideal habitat for juvenile salmonids compared to the larger tributaries and main stream portions that are the current focus. Illustrating the importance of these small streams will ensure that SHARE will be able to more effectively spread the focus area approach to Habitat Restoration that we’ve been working on. Not too surprisingly, when Wes isn’t working, he spends most of his time Fly Fishing!
+    div.person
+      p.name Joshua Royte
+      p 
+        a(href='http://www.nature.org/') The Nature Conservancy
 
-    section
-      h2(id="board") Board of Directors
+    div.person
+      p.name Mark Berry
+      p 
+        a(href='https://www.downeastlakes.org/') Downeast Lakes Land Trust
 
-      div.person
-        h3 Joan Trial
-        p 
-          a(href='http://www.maine.gov/dmr/index.htm') Maine DMR
+    div.person
+      p.name John Burrows
+      p Atlantic Salmon Federation
 
-      div.person
-        h3 Bill Archambault 
-        p 
-          a(href='http://www.fws.gov/') US Fish & Wildlife
+    div.person
+      p.name Ed Hennessey 
+      p 
+        a(href='http://www.machiassavings.com/Default.aspx') Machias Savings Bank
 
-      div.person
-        h3 Joshua Royte
-        p 
-          a(href='http://www.nature.org/') The Nature Conservancy
+    div.person
+      p.name Keith Kanoti
+      p 
+        a(href='http://www.maine.gov/doc/mfs/') Maine Forest Service
 
-      div.person
-        h3 Mark Berry
-        p 
-          a(href='https://www.downeastlakes.org/') Downeast Lakes Land Trust
+    div.person
+      p.name Nat Linquist
+      p 
+        a(href='http://www.wymans.com/') Jasper Wyman & Sons
 
-      div.person
-        h3 John Burrows
-        p Atlantic Salmon Federation
+    div.person
+      p.name Ed Loque
+      p 
+        a(href='http://www.maine.gov/dep/') Maine DEP
 
-      div.person
-        h3 Ed Hennessey 
-        p.title Treasurer
-        p 
-          a(href='http://www.machiassavings.com/Default.aspx') Machias Savings Bank
-
-      div.person
-        h3 Keith Kanoti
-        p 
-          a(href='http://www.maine.gov/doc/mfs/') Maine Forest Service
-
-      div.person
-        h3 Nat Linquist
-        p 
-          a(href='http://www.wymans.com/') Jasper Wyman & Sons
-
-      div.person
-        h3 Ed Loque
-        p 
-          a(href='http://www.maine.gov/dep/') Maine DEP
-
-      div.person
-        h3 Bob Murphy
-        p 
-          a(href='http://www.americanforestmanagement.com/') American Forestry Management
+    div.person
+      p.name Bob Murphy
+      p 
+        a(href='http://www.americanforestmanagement.com/') American Forestry Management
 

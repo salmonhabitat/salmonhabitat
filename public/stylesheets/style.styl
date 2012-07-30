@@ -23,7 +23,7 @@ a
   color $primary
   text-decoration none
   &:hover
-    color $hilite
+    color $brand
 
 p, li
   font-size 0.9rem
@@ -37,6 +37,10 @@ nav
     font-size 1.2rem
     margin 0.25em 0
 
+iframe
+  width 100%
+  height 300px
+
 // ===== STRUCTURE =====
 
 body
@@ -47,11 +51,80 @@ div.container
   padding 1em
   margin 0 auto
 
+div.person
+  display inline-block
+  vertical-align top
+  width 23%
+  margin 0 1%
+  text-align center
+  img
+    width 100%
+  p
+    color $primary
+    font-size 0.9rem
+  p.name
+    font-weight bold
+
+nav.page
+  li
+    list-style-type circle
+    a
+      color $brand
+
+ul.projects
+  li
+    font-weight bold
+    font-size 1.1rem
+    background $structure
+    margin 0.25em 0
+    padding 0.54em
+    &:hover
+      background #f6f6f6
+
 // ===== MOBILE =====
+
+@media screen and (max-width: 480px)
+  div.container
+    width 100%
+
+  div.header
+    width inherit
+    text-align center
+    nav
+      li
+        background $structure
+
+  div.content
+    width inherit
+    text-align center
+    img.main
+      display none
+
+  nav.social
+    display none
 
 // ===== DESKTOP =====
 
 @media screen and (min-width: 481px)
   div.container
-    width 720px
+    width 960px
+
+  div.header
+    position relative
+    float left
+    top 5em
+    width 38%
+    nav.social
+      margin-top 2em
+      li
+        margin 0 4px 0 0
+        float left
+
+  div.content
+    position relative
+    float left
+    top 5em
+    width 62%
+    p, li
+      font-size 1.1rem
   

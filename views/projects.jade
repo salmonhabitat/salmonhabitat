@@ -1,31 +1,18 @@
 extends layout
-
 block content
 
-  include includes/head
-
-  div.content
-
-    p Practical, action oriented work. Plus some more description, etc.
-    
-    nav
-      ul
-        li
-          a(href='#arches') Open-Arch Culverts
-        li
-          a(href='#lwd') Large Woody Debris
-        li
-          a(href='#misc') Bank stabilization, tree planting, etc.
-
-    div.map
-      img(src='http://placehold.it/350x150')
-
-    section(id="arches")
-      h2 Open-Arch Culverts
-
-    section(id="lwd")
-      h2 Large Woody Debris
-
-    section(id="misc")
-      h2 Other Projects
-
+  h1= title
+  p 
+    | Practical, action oriented work. Plus some more description, etc.
+  
+  iframe(frameBorder=0,
+    src='http://a.tiles.mapbox.com/v3/jacques.map-tb2ylctt.html#9/44.948/-68.332')
+  ul.projects
+    li
+      a(href='projects/culverts') Open-Arch Culverts
+    li
+      a(href='projects/lwd') Large Woody Debris
+    li
+      a(href='projects/sdss') ATS Spatial Decision Support System
+    li
+      a(href='projects/temperature') Temperature

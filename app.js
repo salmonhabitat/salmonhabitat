@@ -1,12 +1,13 @@
-
-/**
- * Module dependencies.
- */
-
 var express = require('express')
-  , routes = require('./routes')
-  , http = require('http');
+var http = require('http');
 
+// Route definitions
+var main = require('./routes/main')
+var about = require('./routes/about')
+var projects = require('./routes/projects')
+var papers = require('./routes/papers')
+
+// App initialization
 var app = express();
 
 app.configure(function(){
@@ -26,11 +27,26 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.index);
-app.get('/about', routes.about);
-app.get('/events', routes.events);
-app.get('/projects', routes.projects);
-app.get('/contact', routes.contact);
+// ===== ROUTES =====
+
+// Index page
+app.get('/', main.index);
+
+// About pages
+app.get('/about', about.index);
+app.get('/about/:name', about.member);
+
+// Project pages
+app.get('/projects', projects.index);
+app.get('/projects/culverts', projects.culverts);
+app.get('/projects/lwd', projects.lwd);
+app.get('/projects/sdss', projects.sdss);
+app.get('/projects/temperature', projects.temperature);
+
+// Literature
+app.get('/papers', papers.all);
+app.get('/paper', papers.view);
+app.post('/paper', papers.post);
 
 http.createServer(app).listen(app.get('port'), function() {
   console.log("Express server listening on port " + app.get('port'));
