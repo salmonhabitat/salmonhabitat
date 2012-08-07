@@ -1,14 +1,21 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "salmonhabitat",
+  "domains": [
+    "salmonhabitat.org",
+    "www.salmonhabitat.org"
+  ],
+  "version": "0.0.1-2",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "3.0.0alpha4",
     "jade": "*",
-    "stylus": "*",
-    "mongoose": "~2.7.2"
-  }
+    "stylus": "*"
+  },
+  "engines": {
+    "node": "0.6.x"
+  },
+  "subdomain": "jacques.salmonhabitat"
 }

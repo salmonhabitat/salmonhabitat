@@ -3,17 +3,7 @@ block content
 
   h1= title
   
-  nav.page
-    ul
-      li
-        a(href="#mission") Our Mission
-      li
-        a(href="#us") Who We Are
-      li
-        a(href="#board") Board of Directors
-
   section#mission
-    h2 Our Mission
 
     p Hi! We're SHARE, or Salmon Habitat and River Enhancement.
     p 
@@ -34,78 +24,15 @@ block content
 
   section#us
     h2 Who We Are
-
-    div.person
-      h3 Steve Koenig
-      p.title The Boss
-      img(src='images/Steve.jpg')
-
-    div.person
-      h3 Jacques Tardie
-      p.title Data
-      img(src='images/Jacques.jpg')
-
-    div.person
-      h3 Katrina Mueller
-      p.title Outreach
-      img(src='images/Katrina.jpg')
-
-    div.person
-      h3 Wes Ashe
-      p.title Research
-      img(src='images/Wes.jpg')
-
-    p The success of SHARE’s on-the-ground program is a product of landowner support and cooperation, member commitments of staff and technical assistance, engaged regulators, members’ commitment to SHARE’s mission and operating principles, and a cadre of enthusiastic student and professional volunteers, partners and SHARE’s staff
+    include about/us
+    
+    p 
+      | The success of SHARE’s on-the-ground program is a product of landowner 
+      | support and cooperation, member commitments of staff and technical 
+      | assistance, engaged regulators, members’ commitment to SHARE’s 
+      | mission and operating principles, and a cadre of enthusiastic student 
+      | and professional volunteers, partners and SHARE’s staff.
 
   section#board
     h2 Board of Directors
-
-    div.person
-      p.name Joan Trial
-      p 
-        a(href='http://www.maine.gov/dmr/index.htm') Maine DMR
-
-    div.person
-      p.name Bill Archambault 
-      p 
-        a(href='http://www.fws.gov/') US Fish & Wildlife
-
-    div.person
-      p.name Joshua Royte
-      p 
-        a(href='http://www.nature.org/') The Nature Conservancy
-
-    div.person
-      p.name Mark Berry
-      p 
-        a(href='https://www.downeastlakes.org/') Downeast Lakes Land Trust
-
-    div.person
-      p.name John Burrows
-      p Atlantic Salmon Federation
-
-    div.person
-      p.name Ed Hennessey 
-      p 
-        a(href='http://www.machiassavings.com/Default.aspx') Machias Savings Bank
-
-    div.person
-      p.name Keith Kanoti
-      p 
-        a(href='http://www.maine.gov/doc/mfs/') Maine Forest Service
-
-    div.person
-      p.name Nat Linquist
-      p 
-        a(href='http://www.wymans.com/') Jasper Wyman & Sons
-
-    div.person
-      p.name Ed Loque
-      p 
-        a(href='http://www.maine.gov/dep/') Maine DEP
-
-    div.person
-      p.name Bob Murphy
-      p 
-        a(href='http://www.americanforestmanagement.com/') American Forestry Management
-
+    include about/board
