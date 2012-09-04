@@ -1,0 +1,102 @@
+$primary = #535554
+$secondary = #6E706F
+$hilite = #FFE06B
+$brand = #3E66A1
+$structure = #eee
+
+.container
+  position relative
+  padding 1em
+  margin 0 auto
+  margin-top 5em
+  width 960px
+
+.content, .header
+  position relative
+  float left
+  margin 1em
+
+.content
+  width 62%
+
+.header
+  width 28%
+  img.logo
+    display block
+    margin 0 auto
+    height 150px
+  p
+    margin-top 2em
+    padding 1em 0
+    font-size 0.9rem
+    border-top 2px solid $structure
+    border-bottom 2px solid $structure
+    text-align center
+    
+  
+nav
+  li
+    font-weight bold
+    font-size 1.2rem
+    margin 0.25em 0
+    text-align center
+  &.social
+    ul
+      text-align center
+    li 
+      display inline
+      margin 0 2px
+
+.projects
+  padding 1em
+  background $structure
+  h3
+    margin 0
+
+img.main
+  width 100%
+
+.person, .member, .project
+  display inline-block
+  vertical-align top
+  background $structure
+  h3, p
+    margin 0
+    font-weight normal
+
+.person
+  width 33%
+  img
+    width 100%
+    -webkit-filter grayscale(100%)
+  h3
+    vertical-align bottom
+    font-size 1.4rem
+    text-align center
+    span.role
+      color $brand
+      font-style italic
+  &:hover img
+    -webkit-filter grayscale(0%)
+
+.member
+  width 19%
+  margin 0.5%
+  padding 0.5em
+  h3, p
+    text-align center
+  h3
+    font-size 1rem
+  p 
+    font-size 0.9rem
+  &:hover
+    background #f3f3f3
+
+.project
+  width 48%
+  margin 1%
+  padding 1em
+  h3, p
+    text-align center
+  &:hover
+    background #f3f3f3

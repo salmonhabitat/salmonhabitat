@@ -34,7 +34,9 @@ app.get('/', main.index);
 
 // About pages
 app.get('/about', about.index);
-app.get('/about/:name', about.member);
+app.get('/about/steve', about.steve);
+app.get('/about/jacques', about.jacques);
+app.get('/about/interns', about.interns);
 
 // Project pages
 app.get('/projects', projects.index);
@@ -42,11 +44,6 @@ app.get('/projects/culverts', projects.culverts);
 app.get('/projects/lwd', projects.lwd);
 app.get('/projects/sdss', projects.sdss);
 app.get('/projects/temperature', projects.temperature);
-
-// Literature
-app.get('/papers', papers.all);
-app.get('/paper', papers.view);
-app.post('/paper', papers.post);
 
 http.createServer(app).listen(app.get('port'), function() {
   console.log("Express server listening on port " + app.get('port'));

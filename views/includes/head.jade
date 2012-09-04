@@ -1,12 +1,17 @@
-section.logo
-  a(href='/')
-    img(src='/images/logo.png')
+a(href='/'): img(src='/images/logo.png', class='logo')
 
-section.tagline
-  p
-    | We're working to restore natural stream function
-    | in downeast Maine. Creating habitat. Having fun.
+p.tagline Working to restore natural stream function in Downeast Maine.
 
 nav
   ul
     li: a(href="/about") About
+    li: a(href="/projects") Projects
+
+nav.social
+  ul
+    li
+      a(href="https://twitter.com/salmonhabitat") 
+        img(src="/images/twitter.png")
+    li
+      a(href="http://www.facebook.com/pages/Project-SHARE/283719411378?ref=hl") 
+        img(src="/images/facebook.png")
