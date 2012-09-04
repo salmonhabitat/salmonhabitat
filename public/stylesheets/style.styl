@@ -4,6 +4,10 @@ $hilite = #FFE06B
 $brand = #3E66A1
 $structure = #eee
 
+body
+  background-image url("/images/bg/groovepaper.png")
+  background-repeat repeat
+
 .container
   position relative
   margin 0 auto
@@ -13,10 +17,14 @@ $structure = #eee
   position relative
   left 170px
   width 620px
+  padding 1em
+  background white
+  border-left 2px solid #f3f3f3
+  border-right 2px solid #f3f3f3
 
 nav
   position fixed
-  top 4.6rem
+  top 5.5rem
   width 150px
   li
     text-transform uppercase
@@ -36,8 +44,12 @@ nav
 .person
   width 32%
   text-align center
+  margin-bottom 1em
   img
     width 100%
+    -webkit-filter grayscale(100%)  
+    &:hover
+      -webkit-filter grayscale(0%)
   h3
     font-size 1.4rem
     margin 0

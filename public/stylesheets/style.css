@@ -1,3 +1,7 @@
+body {
+  background-image: url("/images/bg/groovepaper.png");
+  background-repeat: repeat;
+}
 .container {
   position: relative;
   margin: 0 auto;
@@ -7,10 +11,14 @@
   position: relative;
   left: 170px;
   width: 620px;
+  padding: 1em;
+  background: #fff;
+  border-left: 2px solid #f3f3f3;
+  border-right: 2px solid #f3f3f3;
 }
 nav {
   position: fixed;
-  top: 4.6rem;
+  top: 5.5rem;
   width: 150px;
 }
 nav li {
@@ -32,9 +40,14 @@ nav li a {
 .person {
   width: 32%;
   text-align: center;
+  margin-bottom: 1em;
 }
 .person img {
   width: 100%;
+  -webkit-filter: grayscale(100%);
+}
+.person img:hover {
+  -webkit-filter: grayscale(0%);
 }
 .person h3 {
   font-size: 1.4rem;
