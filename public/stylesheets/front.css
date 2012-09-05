@@ -1,3 +1,6 @@
+body {
+  background-image: url("/images/bg/groovepaper.png");
+}
 .container {
   position: relative;
   padding: 1em;
@@ -10,12 +13,16 @@
   position: relative;
   float: left;
   margin: 1em;
+  background: #fff;
 }
 .content {
   width: 62%;
 }
 .header {
   width: 28%;
+  padding: 1em 0;
+  border: 2px solid #f6f6f6;
+  height: 380px;
 }
 .header img.logo {
   display: block;
@@ -26,15 +33,16 @@
   margin-top: 2em;
   padding: 1em 0;
   font-size: 0.9rem;
-  border-top: 2px solid #eee;
-  border-bottom: 2px solid #eee;
   text-align: center;
 }
 nav li {
-  font-weight: bold;
   font-size: 1.2rem;
+  text-transform: uppercase;
   margin: 0.25em 0;
   text-align: center;
+}
+nav.social {
+  margin-top: 1em;
 }
 nav.social ul {
   text-align: center;

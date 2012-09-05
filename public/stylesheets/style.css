@@ -18,7 +18,16 @@ body {
   border-bottom: 2px solid #f3f3f3;
 }
 .post img {
+  border: 2px solid #f3f3f3;
   width: 100%;
+}
+.post ul {
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+.post li {
+  margin-bottom: 0;
+  list-style-type: circle;
 }
 nav {
   position: fixed;
@@ -35,6 +44,9 @@ nav li a {
 }
 .attention {
   background: #eee;
+}
+.padder {
+  padding: 0 0.5em;
 }
 .inline {
   display: inline-block;

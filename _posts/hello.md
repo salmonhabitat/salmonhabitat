@@ -1,9 +1,23 @@
-{{{ "title": "Hello", "tags": ["site"], "date": "8-26-2012" }}}
+{{{ "title": "Groves Mill remnant dam removal", "tags": ["dam", "fieldwork", "old stream"], "date": "9-5-2012" }}}
 
-In the last four or five years my thoughts have been coalescing into a strange, self-reinforcing amalmagation. Like a good pet, it's always there by my side, shaping and directing my activities in ways that *feel* correct. The problem is that the feeling is more intuitive than logical. More of a comfort than something solid I can stand on.
+Supported by some *excellent* volunteers, we spent the last few days of August removing a remnant log drive dam at the Groves Mills site on Old Stream.
 
-Which is why I'm starting to write. Putting words on paper forces me to think more logically. Faults in my reasoning are more visible once they've been scribbled out.
+Often, remnant log drive dams go unnoticed. Visibly subtle, their effects on the fish community can be dramatic. For instance:
 
-So, that's the plan. Looking forward to any conversations this might begin.
+- At low flows, remnant dams can impede fish passage.
+- At any flow, they alter the natural stream hydrology of the system by impeding sediment transport.
+- They increase water temperature, reducing the competitiveness of native species, and increasing it for exotics.
 
-![image test](https://lh4.googleusercontent.com/-gaIH_sqVdl8/UELWGUaLtAI/AAAAAAAAAGA/RkEM7l_1hwU/s832/IMG_1719.JPG)
+And they're **everywhere...**
+
+So it was great to have so much enthusiatic support on this site. We turned this warm, pool/glide habitat from this:
+
+![pre downstream looking up](https://s3.amazonaws.com/salmonhabitat.org/posts/groves_pre_downstream_looking_up.jpg)
+
+to this:
+
+![post downstream](https://s3.amazonaws.com/salmonhabitat.org/posts/groves_post_downstream.jpg)
+
+It was great. More photos are available [**here**](https://www.dropbox.com/sh/4nvavnovc3qzqmg/47bafxgxoK)
+
+

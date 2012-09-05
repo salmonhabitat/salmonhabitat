@@ -1,19 +1,15 @@
-module.exports = {
+exports.index = function(req, res){
+  res.render('about', {title: 'About' });
+};
 
-  index: function(req, res){
-    res.render('about', { title: 'About' });
-  },
-  
-  steve: function(req, res){
-    res.render('employees/steve');
-  },
+exports.steve = function(req, res){
+  res.render('employees/steve', { title: 'Steve Koenig' });
+};
 
-  jacques: function(req, res){
-    res.render('employees/jacques');
-  },
+exports.jacques = function(req, res){
+  res.render('employees/jacques', { title: 'Jacques Tardie' });
+};
 
-  interns: function(req, res){
-    res.render('employees/interns');
-  },
-
+exports.interns = function(req, res){
+  res.render('employees/interns', { title: 'Interns' });
 };
