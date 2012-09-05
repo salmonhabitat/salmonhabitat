@@ -1,14 +1,15 @@
-var express = require('express')
+var express = require('express');
 var http = require('http');
+var poet = require('poet');
 
-// Route definitions
-var main = require('./routes/main')
-var about = require('./routes/about')
-var projects = require('./routes/projects')
-var papers = require('./routes/papers')
+var app = express.createServer();
 
-// App initialization
-var app = express();
+poet(app)
+  .createPostRoute()
+  .createPageRoute()
+  .createTagRoute()
+  .createCategoryRoute()
+  .init();
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3333);
@@ -29,7 +30,12 @@ app.configure('development', function(){
 
 // ===== ROUTES =====
 
-// Index page
+var main = require('./routes/main');
+var about = require('./routes/about');
+var projects = require('./routes/projects');
+var papers = require('./routes/papers');
+
+// Index
 app.get('/', main.index);
 
 // About pages
@@ -45,6 +51,11 @@ app.get('/projects/lwd', projects.lwd);
 app.get('/projects/sdss', projects.sdss);
 app.get('/projects/temperature', projects.temperature);
 
-http.createServer(app).listen(app.get('port'), function() {
-  console.log("Express server listening on port " + app.get('port'));
-});
+// Blawg
+app.get('/blog', main.blog);
+app.get('/archive', main.archive);
+
+// Events
+app.get('/events', main.events);
+
+app.listen(3333);

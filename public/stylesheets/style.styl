@@ -21,6 +21,10 @@ body
   background white
   border-left 2px solid #f3f3f3
   border-right 2px solid #f3f3f3
+  border-bottom 2px solid #f3f3f3
+
+.post img
+  width 100%
 
 nav
   position fixed
@@ -69,4 +73,20 @@ nav
   -o-transition: background 0.5s ease;
   transition: background 0.5s ease;
 
-   
+.event
+  p
+    margin-bottom 0.5em
+  .date h3
+    float left
+  .details
+    float left
+    margin-left 1em
+    margin-bottom 1em
+    width 50%
+
+p
+  &.clear
+    clear both
+  a
+    color $brand
+    font-weight bold

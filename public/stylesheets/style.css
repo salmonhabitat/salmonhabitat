@@ -15,6 +15,10 @@ body {
   background: #fff;
   border-left: 2px solid #f3f3f3;
   border-right: 2px solid #f3f3f3;
+  border-bottom: 2px solid #f3f3f3;
+}
+.post img {
+  width: 100%;
 }
 nav {
   position: fixed;
@@ -71,4 +75,23 @@ nav li a {
 }
 .member p {
   font-size: 0.8rem;
+}
+.event p {
+  margin-bottom: 0.5em;
+}
+.event .date h3 {
+  float: left;
+}
+.event .details {
+  float: left;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  width: 50%;
+}
+p.clear {
+  clear: both;
+}
+p a {
+  color: #3e66a1;
+  font-weight: bold;
 }
