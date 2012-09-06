@@ -54,6 +54,14 @@ nav {
   top: 5.5rem;
   width: 150px;
 }
+nav ul.social {
+  margin-top: 1em;
+  text-align: right;
+}
+nav ul.social li {
+  display: inline;
+  margin-left: 5px;
+}
 nav li {
   text-transform: uppercase;
   text-align: right;
