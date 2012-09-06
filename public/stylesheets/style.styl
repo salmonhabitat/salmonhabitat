@@ -1,4 +1,4 @@
-$primary = #535554
+$primary = #5355554
 $secondary = #6E706F
 $hilite = #FFE06B
 $brand = #3E66A1
@@ -22,6 +22,11 @@ body
   border-left 2px solid #f3f3f3
   border-right 2px solid #f3f3f3
   border-bottom 2px solid #f3f3f3
+  ul
+    margin-left 2em
+  li
+    list-style-type circle
+    margin-bottom 0
 
 .post 
   img
@@ -32,8 +37,20 @@ body
     margin-bottom 1em
   li
     margin-bottom 0
-    list-style-type circle
 
+.about 
+  img
+    float right
+    width 200px
+    margin-left 1em
+  ul
+    margin-bottom 1em
+  .contact p
+    margin-bottom 0
+
+#backstretch img
+  -webkit-filter grayscale(50%)  
+  
 nav
   position fixed
   top 5.5rem
@@ -51,10 +68,40 @@ nav
 .padder
   padding 0 0.5em
 
+.float
+  float left
+  margin-right 1em
+
 .inline
   display inline-block
   vertical-align top
   margin 0.5%
+
+.front
+  width 15%
+  background white
+  margin 0 auto
+  margin-top 10%
+  opacity 0.9
+  border 2px solid $structure
+  &:hover
+    opacity 1
+  img
+    width 80%
+    margin 10%
+  p
+    text-align center
+    margin 0 10%
+    color $primary
+    font-style italic
+    font-size 0.9rem
+  ul
+    text-align center
+    margin 10%
+  li
+    text-transform uppercase
+    font-weight bold
+    margin-bottom 0
 
 .person
   width 32%

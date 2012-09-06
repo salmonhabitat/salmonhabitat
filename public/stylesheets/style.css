@@ -17,6 +17,13 @@ body {
   border-right: 2px solid #f3f3f3;
   border-bottom: 2px solid #f3f3f3;
 }
+.content ul {
+  margin-left: 2em;
+}
+.content li {
+  list-style-type: circle;
+  margin-bottom: 0;
+}
 .post img {
   border: 2px solid #f3f3f3;
   width: 100%;
@@ -27,7 +34,20 @@ body {
 }
 .post li {
   margin-bottom: 0;
-  list-style-type: circle;
+}
+.about img {
+  float: right;
+  width: 200px;
+  margin-left: 1em;
+}
+.about ul {
+  margin-bottom: 1em;
+}
+.about .contact p {
+  margin-bottom: 0;
+}
+#backstretch img {
+  -webkit-filter: grayscale(50%);
 }
 nav {
   position: fixed;
@@ -48,10 +68,45 @@ nav li a {
 .padder {
   padding: 0 0.5em;
 }
+.float {
+  float: left;
+  margin-right: 1em;
+}
 .inline {
   display: inline-block;
   vertical-align: top;
   margin: 0.5%;
+}
+.front {
+  width: 15%;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 10%;
+  opacity: 0.9;
+  border: 2px solid #eee;
+}
+.front:hover {
+  opacity: 1;
+}
+.front img {
+  width: 80%;
+  margin: 10%;
+}
+.front p {
+  text-align: center;
+  margin: 0 10%;
+  color: #535555 4;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.front ul {
+  text-align: center;
+  margin: 10%;
+}
+.front li {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 .person {
   width: 32%;

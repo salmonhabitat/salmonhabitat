@@ -11,5 +11,5 @@ exports.jacques = function(req, res){
 };
 
 exports.interns = function(req, res){
-  res.render('employees/interns', { title: 'Interns' });
+  res.render('employees/interns', { title: 'Previously...' });
 };
