@@ -1,33 +1,15 @@
-!!!
-html
-  head
-    title SHARE
-    
-    block meta
-      meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+extends layout
 
-    block stylesheets
-      link(rel='stylesheet', href='/stylesheets/base.css')
-      link(rel='stylesheet', href='/stylesheets/style.css')
+block content
 
-    block javascripts
-      script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js')
-      script(src='/javascripts/jquery.backstretch.min.js')
-      script
-        $.backstretch('/images/front.jpg');
-      script(src="http://use.typekit.com/iyv6vkd.js")
-      script
-        try{Typekit.load();}catch(e){}
+  h3 Welcome!
+  p We're SHARE, or Salmon Habitat and River Enhancement.
+  p 
+    | We’re a nonprofit 501(c)(3) looking to restore fish passage and 
+    | natural stream function to benefit Atlantic salmon and other 
+    | native fishes. Since 2005, we’ve improved and/or opened up A LOT of 
+    | previously  inaccessible habitat – over 100 miles (2800+ habitat units).
 
-  body
-    .front
-      .top
-        img(src='/images/logo.png')
-        p Working to restore natural stream function in downeast Maine.
-      .bottom
-        ul
-          li: a(href='/about') About
-          li: a(href='/events') Events
-          li: a(href='/blog') Blog
-      
-      
+  h3 Our Work
+  p The majority of our work is within the Machias & Old Stream watersheds, as they've been recognized by biologists as some the highest priority for Atlantic salmon recovery. Please browse around the map below to get a feel for the type of projects we like to work on!
+  <iframe frameBorder='0' src='http://a.tiles.mapbox.com/v3/jacques.map-gmppfmwk.html#10/44.91899999999999/-67.691'></iframe>

@@ -1,156 +1,121 @@
-$primary = #5355554
-$secondary = #6E706F
-$hilite = #FFE06B
-$brand = #3E66A1
-$structure = #eee
-
-body
-  background-image url("/images/bg/groovepaper.png")
-  background-repeat repeat
-
-.container
-  position relative
-  margin 0 auto
-  width 960px
+@import colors
+@import "normalize.css"
+@import base
 
 .content
   position relative
-  left 170px
-  width 620px
+  margin 0 auto
+  width 40em
   padding 1em
-  background white
-  border-left 2px solid #f3f3f3
-  border-right 2px solid #f3f3f3
-  border-bottom 2px solid #f3f3f3
   ul
     margin-left 2em
   li
     list-style-type circle
     margin-bottom 0
+  p a, li a
+    font-weight bold
+  h3,h2
+    margin-top 0
 
-.post 
+.post
   img
-    border 2px solid #f3f3f3
     width 100%
-  ul
-    margin-left 2em
-    margin-bottom 1em
-  li
-    margin-bottom 0
 
 .about 
   img
     float right
     width 200px
     margin-left 1em
-  ul
-    margin-bottom 1em
-  .contact p
-    margin-bottom 0
 
-#backstretch img
-  -webkit-filter grayscale(50%)  
-  
-nav
-  position fixed
-  top 5.5rem
-  width 150px
-  ul.social
-    margin-top 1em
-    text-align right
+header
+  width 100%
+  background #444
+  background url("/images/bg-blur.jpg")
+  background-size 100%
+  height 12em
+  border-bottom 5px solid #eee
+  position relative
+.inner
+  margin 0 auto
+  padding-top 3em
+  width 40em
+  img.title
+    float left
+    height 120px
+  nav
+    float right
+    position relative
+    top 2em
     li
+      text-transform uppercase
+      font-weight bold
       display inline
-      margin-left 5px
-  li
-    text-transform uppercase
-    text-align right
-    margin-bottom 0.25rem
-    a
-      color $secondary
+      margin-left 0.5em
+      a
+        color white
+        padding 5px 10px
+        -webkit-border-radius 5px
+        border-radius 5px
+        -webkit-transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -ms-transition: background 1s ease;
+        -o-transition: background 1s ease;
+        transition: background 1s ease;
+        &:hover
+          background:rgba(0,0,0,0.2)
+          -webkit-transition: background 1s ease;
+          -moz-transition: background 1s ease;
+          -ms-transition: background 1s ease;
+          -o-transition: background 1s ease;
+          transition: background 1s ease;
 
 .attention
   background $structure
 
-.padder
-  padding 0 0.5em
+.pad
+  padding 0.5em
 
-.float
-  float left
-  margin-right 1em
+.us
+  .person
+    display inline-block
+    width 30%
+    margin 0 1.3%
+    vertical-align bottom
+    p
+      text-align center
+      text-transform uppercase
+      font-weight bold
+    img
+      width 100%
 
-.inline
-  display inline-block
-  vertical-align top
-  margin 0.5%
-
-.front
-  width 15%
-  background white
-  margin 0 auto
-  margin-top 10%
-  opacity 0.9
-  border 2px solid $structure
-  &:hover
-    opacity 1
-  img
-    width 80%
-    margin 10%
-  p
-    text-align center
-    margin 0 10%
-    color $primary
-    font-style italic
-    font-size 0.9rem
-  ul
-    text-align center
-    margin 10%
+.board
   li
-    text-transform uppercase
-    font-weight bold
-    margin-bottom 0
+    margin 0.5em 0
+    h3, p
+      margin 0
+    h3
+      font-size 1.2em
+    p
 
-.person
-  width 32%
-  text-align center
-  margin-bottom 1em
-  img
-    width 100%
-    -webkit-filter grayscale(100%)  
-    &:hover
-      -webkit-filter grayscale(0%)
-  h3
-    font-size 1.4rem
-    margin 0
+.footer
+  background #eee
+  border-top 2px solid #eee
+  .inner
+    padding-top 0
+  ul
+    display inline-block
+    width 33%
+    text-align center
+    li
+      display inline
+      margin-right 5px
+      a
+        font-weight bold
+        text-transform uppercase
+    &.social
+      li
+        display inline
+        margin-left 5px
 
-.member
-  width 24%
-  text-align center
-  p, h3
-    margin-bottom 0
-  h3
-    font-size 1.2rem
-  p
-    font-size 0.8rem
-  -webkit-transition: background 0.5s ease;
-  -moz-transition: background 0.5s ease;
-  -ms-transition: background 0.5s ease;
-  -o-transition: background 0.5s ease;
-  transition: background 0.5s ease;
-
-.event
-  p
-    margin-bottom 0.5em
-  .date h3
-    float left
-  .details
-    float left
-    margin-left 1em
-    margin-bottom 1em
-    width 50%
-
-p
-  &.clear
-    clear both
-  a
-    color $brand
-    font-weight bold
+ul.posts li
+  text-transform uppercase
