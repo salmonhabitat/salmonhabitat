@@ -14,6 +14,10 @@ exports.sdss = function(req, res){
   res.render('sdss', { title: 'SDSS' });
 };
 
+exports.sofar = function(req, res){
+  res.render('sofar', { title: 'SDSS' });
+};
+
 exports.blog = function(req, res){
   res.render('blog', { title: 'Blog' });
 };

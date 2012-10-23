@@ -188,3 +188,10 @@ header {
 ul.posts li {
   text-transform: uppercase;
 }
+.version {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #f00;
+  vertical-align: bottom;
+  float: right;
+}

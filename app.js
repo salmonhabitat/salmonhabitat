@@ -55,6 +55,7 @@ app.get('/events', main.events);
 
 app.get('/resources', main.resources);
 app.get('/resources/sdss', main.sdss);
+app.get('/resources/sdss/sofar', main.sofar);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
