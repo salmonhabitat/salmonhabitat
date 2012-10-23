@@ -16,8 +16,20 @@ block content
 
   .us
     h3 Who We Are
-    include about/us
-  
+    .person.attention.inline
+      a(href='/about/steve')
+        p Steve Koenig
+        img(src='/images/Steve.jpg')
+
+    .person.attention.inline
+      a(href='/about/jacques')
+        p Jacques Tardie
+        img(src='/images/Jacques.jpg')
+
+    .person.attention.inline
+      a(href='/about/interns')
+        p Past Employees
+        img(src='/images/interns.jpg') 
   p 
     | The success of SHARE’s on-the-ground program is a product of landowner 
     | support and cooperation, member commitments of staff and technical 
@@ -27,4 +39,62 @@ block content
 
   .board
     h3 Board of Directors
-    include about/board
+    ul
+      li
+        h3 Joan Trial
+        p.title Board Chair
+        p.description Senior Atlantic Salmon Biologist
+        p.organization: a(href='http://www.maine.gov/dmr/index.htm') Maine DMR
+      li
+        h3 Ed Loque
+        p.title Board Vice-Chair
+        p.description Regional Director
+        p.organization: a(href='http://www.maine.gov/dep/') Maine DEP
+      li
+        h3 Ed Hennessey
+        p.title Treasurer
+        p.description President
+        p.organization: a(href='http://www.machiassavings.com/Default.aspx') Machias Savings Bank
+      li
+        h3 Bill Archambault
+        p.description Region 5 Assistant Regional Fisheries Director
+        p.organization: a(href='http://www.fws.gov/') USFWS
+      li
+        h3 Peter Lamothe
+        p.description Complex Manager
+        p.organization: a(href='http://www.fws.gov') USFWS
+      li 
+        h3 Keith Kanoti
+        p.description Water Resource Forester
+        p.organization: a(href='http://www.maine.gov/doc/mfs/') Maine Forest Service
+      li
+        h3 Dean Bradshaw
+        p.description Civil Engineer
+        p.organization Bradshaw Civil Engineering Services
+      li
+        h3 Bob Murphy
+        p.description Forester
+        p.organization: a(href='http://www.americanforestmanagement.com/') American Forestry Management
+      li
+        h3 Dave Whitney
+        p.description Local Blueberry Grower
+      li
+        h3 Dan Bowker
+        p.description Environmental Coordinator
+        p.organization: a(href='http://oxfordfrozenfoods.com/cherryfield_foods') Cherryfield Foods
+      li
+        h3 Pat Sirois
+        p.description Director of Sustainable Forestry Initiative
+        p.organization: a(href='http://www.sfiprogram.org/') Maine Forest Council
+      li
+        h3 Joshua Royte
+        p.description Environmental Planner
+        p.organization: a(href='http://www.nature.org/') The Nature Conservancy
+      li
+        h3 Mark Berry
+        p.description Executive Director
+        p.organization: a(href='https://www.downeastlakes.org/') Downeast Lakes Land Trust
+      li
+        h3 John Burrows
+        p.description 
+        p.organization: a(href='http://www.asf.ca/main.html') Atlantic Salmon Federation
