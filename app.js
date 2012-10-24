@@ -1,6 +1,9 @@
 var express = require('express');
 var http = require('http');
 var poet = require('poet');
+var moment = require('moment');
+var stylus = require('stylus');
+var nib = require('nib');
 
 var app = express.createServer();
 
@@ -11,13 +14,24 @@ poet(app)
   .createCategoryRoute()
   .init();
 
+function compile(str, path) {
+  return stylus(str)
+    .set('filename', path)
+    .set('compress', true)
+    .use(nib());
+ }
+
+
 app.configure(function(){
   app.set('port', process.env.PORT || 3344 );
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.favicon());
   app.use(express.logger('dev'));
-  app.use(require('stylus').middleware(__dirname + '/public'));
+  app.use(stylus.middleware({
+    src:__dirname + '/public',
+    compile: compile
+  }));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
@@ -50,8 +64,6 @@ app.get('/projects/temperature', projects.temperature);
 
 app.get('/blog', main.blog);
 app.get('/archive', main.archive);
-
-app.get('/events', main.events);
 
 app.get('/resources', main.resources);
 app.get('/resources/sdss', main.sdss);

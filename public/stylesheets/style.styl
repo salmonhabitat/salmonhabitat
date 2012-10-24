@@ -1,25 +1,26 @@
+@import 'nib'
 @import colors
-@import "normalize.css"
+@import normalize
 @import base
 
-.content
-  position relative
-  margin 0 auto
-  width 40em
+.container
   padding 1em
+
+.content
   ul
     margin-left 2em
-  li
+  
     list-style-type circle
     margin-bottom 0
   p a, li a
     font-weight bold
-  h3,h2
-    margin-top 0
-
-.post
   img
     width 100%
+
+.sidebar
+  p.button a
+    background green
+    padding 5px 10px
 
 .about 
   img
@@ -32,42 +33,30 @@ header
   background #444
   background url("/images/bg-blur.jpg")
   background-size 100%
-  height 12em
+  height 10em
   border-bottom 5px solid #eee
   position relative
-.inner
-  margin 0 auto
-  padding-top 3em
-  width 40em
   img.title
-    float left
+    padding 1em
     height 120px
   nav
-    float right
     position relative
-    top 2em
+    top 4em
     li
       text-transform uppercase
       font-weight bold
       display inline
-      margin-left 0.5em
+      margin-right 0.5em
       a
-        color white
         padding 5px 10px
-        -webkit-border-radius 5px
+        color white
         border-radius 5px
-        -webkit-transition: background 1s ease;
-        -moz-transition: background 1s ease;
-        -ms-transition: background 1s ease;
-        -o-transition: background 1s ease;
-        transition: background 1s ease;
+        transition background 1s ease
         &:hover
-          background:rgba(0,0,0,0.2)
-          -webkit-transition: background 1s ease;
-          -moz-transition: background 1s ease;
-          -ms-transition: background 1s ease;
-          -o-transition: background 1s ease;
-          transition: background 1s ease;
+          background rgba(0,0,0,0.2)
+          transition background 1s ease
+
+// REUSABLE CLASSES
 
 .attention
   background $structure
@@ -98,10 +87,9 @@ header
     p
 
 .footer
+  clear both
   background #eee
   border-top 2px solid #eee
-  .inner
-    padding-top 0
   ul
     display inline-block
     width 33%
@@ -125,4 +113,15 @@ ul.posts li
   font-size 0.8rem
   color red
   vertical-align bottom
+  float right
+
+.left, .right
+  padding 0 1%
+
+.left
+  width 60%
+  float left
+
+.right
+  width 36%
   float right
