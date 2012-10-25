@@ -21,6 +21,7 @@ function compile(str, path) {
     .use(nib());
  }
 
+// Configuration
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3344 );
@@ -42,32 +43,25 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-// ===== ROUTES =====
+// Routes 
 
 var main = require('./routes/main');
 var about = require('./routes/about');
-var projects = require('./routes/projects');
-var papers = require('./routes/papers');
 
 app.get('/', main.index);
-
-app.get('/about', about.index);
-app.get('/about/steve', about.steve);
-app.get('/about/jacques', about.jacques);
-app.get('/about/interns', about.interns);
-
-app.get('/projects', projects.index);
-app.get('/projects/culverts', projects.culverts);
-app.get('/projects/lwd', projects.lwd);
-app.get('/projects/sdss', projects.sdss);
-app.get('/projects/temperature', projects.temperature);
 
 app.get('/blog', main.blog);
 app.get('/archive', main.archive);
 
 app.get('/resources', main.resources);
 app.get('/resources/sdss', main.sdss);
-app.get('/resources/sdss/sofar', main.sofar);
+
+app.get('/about', about.index);
+app.get('/about/steve', about.steve);
+app.get('/about/jacques', about.jacques);
+app.get('/about/interns', about.interns);
+
+// Server
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

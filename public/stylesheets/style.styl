@@ -6,42 +6,20 @@
 .container
   padding 1em
 
-.content
-  ul
-    margin-left 2em
-  
-    list-style-type circle
-    margin-bottom 0
-  p a, li a
-    font-weight bold
-  img
-    width 100%
-
-.sidebar
-  p.button a
-    background green
-    padding 5px 10px
-
-.about 
-  img
-    float right
-    width 200px
-    margin-left 1em
-
 header
+  height 150px
   width 100%
   background #444
   background url("/images/bg-blur.jpg")
   background-size 100%
-  height 10em
   border-bottom 5px solid #eee
   position relative
   img.title
-    padding 1em
+    margin-top 15px
     height 120px
   nav
     position relative
-    top 4em
+    top 60px
     li
       text-transform uppercase
       font-weight bold
@@ -55,6 +33,62 @@ header
         &:hover
           background rgba(0,0,0,0.2)
           transition background 1s ease
+
+.content
+  margin-bottom 10em
+  ul
+    margin-left 2em
+    margin-bottom 0
+  a
+    font-weight bold
+  img
+    width 100%
+
+.newsletter
+  a
+    border-radius 3px
+    border 2px solid #A81606
+    background #E32020
+    padding 5px 10px
+    font-size 1.2rem
+    color white
+    margin 2em 0
+
+.events, .posts
+  li
+    list-style-type circle
+  p
+    margin 0
+    &.event
+      font-weight bold
+    &.date
+      text-transform uppercase
+      font-size 0.9rem
+
+.footer
+  clear both
+  background #eee
+  border-top 2px solid #eee
+  ul
+    display inline-block
+    width 33%
+    text-align center
+    li
+      display inline
+      margin-right 5px
+      a
+        font-weight bold
+        text-transform uppercase
+    &.social
+      li
+        display inline
+        margin-left 5px
+
+.about 
+  img
+    float right
+    width 200px
+    margin-left 1em
 
 // REUSABLE CLASSES
 
@@ -85,25 +119,6 @@ header
     h3
       font-size 1.2em
     p
-
-.footer
-  clear both
-  background #eee
-  border-top 2px solid #eee
-  ul
-    display inline-block
-    width 33%
-    text-align center
-    li
-      display inline
-      margin-right 5px
-      a
-        font-weight bold
-        text-transform uppercase
-    &.social
-      li
-        display inline
-        margin-left 5px
 
 ul.posts li
   text-transform uppercase

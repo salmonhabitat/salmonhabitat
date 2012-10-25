@@ -60,17 +60,27 @@ ul{padding-left:0}
 li{list-style-type:none}
 iframe{width:100%;height:400px}
 .container{padding:1em}
-.content ul{margin-left:2em;list-style-type:circle;margin-bottom:0}
-.content p a,.content li a{font-weight:bold}
-.content img{width:100%}
-.sidebar p.button a{background:#008000;padding:5px 10px}
-.about img{float:right;width:200px;margin-left:1em}
-header{width:100%;background:#444;background:url("/images/bg-blur.jpg");-webkit-background-size:100%;-moz-background-size:100%;background-size:100%;height:10em;border-bottom:5px solid #eee;position:relative;}
-header img.title{padding:1em;height:120px}
-header nav{position:relative;top:4em;}
+header{height:150px;width:100%;background:#444;background:url("/images/bg-blur.jpg");-webkit-background-size:100%;-moz-background-size:100%;background-size:100%;border-bottom:5px solid #eee;position:relative;}
+header img.title{margin-top:15px;height:120px}
+header nav{position:relative;top:60px;}
 header nav li{text-transform:uppercase;font-weight:bold;display:inline;margin-right:.5em;}
 header nav li a{padding:5px 10px;color:#fff;-webkit-border-radius:5px;border-radius:5px;-webkit-transition:background 1s ease;-moz-transition:background 1s ease;-o-transition:background 1s ease;-ms-transition:background 1s ease;transition:background 1s ease;}
 header nav li a:hover{background:rgba(0,0,0,0.2);-webkit-transition:background 1s ease;-moz-transition:background 1s ease;-o-transition:background 1s ease;-ms-transition:background 1s ease;transition:background 1s ease}
+.content{margin-bottom:10em;}
+.content ul{margin-left:2em;margin-bottom:0}
+.content a{font-weight:bold}
+.content img{width:100%}
+.newsletter a{-webkit-border-radius:3px;border-radius:3px;border:2px solid #a81606;background:#e32020;padding:5px 10px;font-size:1.2rem;color:#fff;margin:2em 0}
+.events li,.posts li{list-style-type:circle}
+.events p,.posts p{margin:0;}
+.events p.event,.posts p.event{font-weight:bold}
+.events p.date,.posts p.date{text-transform:uppercase;font-size:.9rem}
+.footer{clear:both;background:#eee;border-top:2px solid #eee;}
+.footer ul{display:inline-block;width:33%;text-align:center;}
+.footer ul li{display:inline;margin-right:5px;}
+.footer ul li a{font-weight:bold;text-transform:uppercase}
+.footer ul.social li{display:inline;margin-left:5px}
+.about img{float:right;width:200px;margin-left:1em}
 .attention{background:#e2e2e2}
 .pad{padding:.5em}
 .us .person{display:inline-block;width:30%;margin:0 1.3%;vertical-align:bottom;}
@@ -79,11 +89,6 @@ header nav li a:hover{background:rgba(0,0,0,0.2);-webkit-transition:background 1
 .board li{margin:.5em 0;}
 .board li h3,.board li p{margin:0}
 .board li h3{font-size:1.2em}
-.footer{clear:both;background:#eee;border-top:2px solid #eee;}
-.footer ul{display:inline-block;width:33%;text-align:center;}
-.footer ul li{display:inline;margin-right:5px;}
-.footer ul li a{font-weight:bold;text-transform:uppercase}
-.footer ul.social li{display:inline;margin-left:5px}
 ul.posts li{text-transform:uppercase}
 .version{text-transform:uppercase;font-size:.8rem;color:#f00;vertical-align:bottom;float:right}
 .left,.right{padding:0 1%}

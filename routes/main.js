@@ -1,9 +1,5 @@
 exports.index = function(req, res){
-  res.render('index', { title: 'Project SHARE' });
-};
-
-exports.events = function(req, res){
-  res.render('events', { title: 'Events' });
+  res.render('index', { title: 'Home' });
 };
 
 exports.resources = function(req, res){
@@ -12,10 +8,6 @@ exports.resources = function(req, res){
 
 exports.sdss = function(req, res){
   res.render('sdss', { title: 'SDSS' });
-};
-
-exports.sofar = function(req, res){
-  res.render('sofar', { title: 'SDSS' });
 };
 
 exports.blog = function(req, res){
