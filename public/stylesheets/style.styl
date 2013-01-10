@@ -2,6 +2,8 @@
 @import colors
 @import normalize
 @import base
+@import css3-gmail-style
+
 
 .container
   padding 1em
@@ -44,27 +46,6 @@ header
   img
     width 100%
 
-.newsletter
-  a
-    border-radius 3px
-    border 2px solid #A81606
-    background #E32020
-    padding 5px 10px
-    font-size 1.2rem
-    color white
-    margin 2em 0
-
-.events, .posts
-  li
-    list-style-type circle
-  p
-    margin 0
-    &.event
-      font-weight bold
-    &.date
-      text-transform uppercase
-      font-size 0.9rem
-
 .footer
   clear both
   background #eee
@@ -90,13 +71,16 @@ header
     width 200px
     margin-left 1em
 
-// REUSABLE CLASSES
+// Utility classes
 
 .attention
   background $structure
 
 .pad
   padding 0.5em
+
+.capitalize
+  text-transform uppercase
 
 .us
   .person
@@ -140,3 +124,15 @@ ul.posts li
 .right
   width 36%
   float right
+
+// Site Specific
+
+.sidebar
+  h1
+    font-size 1.2rem
+    color $secondary
+    margin 2em 0 0 0 
+  p, li, ul
+    margin 0
+  input
+    font-size 0.9rem

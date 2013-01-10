@@ -1,26 +1,13 @@
-section.newsletter
-  p Keep up to date on salmon restoration in Downeast Maine!
-  p.subscribe: a(href='http://eepurl.com/qY1sz') Subscribe to our Newsletter!
+h1 Newsletter
+<form action="https://tinyletter.com/salmonhabitat" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/salmonhabitat', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Want to keep up with SHARE? This is the best way to do it! Enter your email address and we'll keep you posted.</label></p><br><p><input type="text" name="email" id="tlemail" /></p><br><input type="hidden" value="1" name="embed"/><input class="bttn red" type="submit" value="Subscribe" /></form>
 
-section.events
-  h3 Upcoming Events
-  ul
-    li
-      p.event DSRRN Science Meeting Abstracts due
-      p.date 11/15/2012
-    li
-      p.event Quarterly SHARE Meeting
-      p.date Sometime in December!
-      p.location Whitneyville
-  p Have an event? Send an email to <a href='mailto:jacques.tardie@gmail.com'>Jacques</a> if you have any suggestions.
+h1 Upcoming
+p Nothing at the moment.
 
-section.posts
-  h3 Recent Posts
+h1 Posts
 
-  - var posts = postList
-  - var page = 1
+- var posts = postList
+- var page = 1
+ul
   - each post in posts
-    ul
-      li
-        p.event: a(href=post.url) #{post.title}
-        p.date #{post.date.getMonth()+1}/#{post.date.getDate()}/#{post.date.getFullYear()}
+    li: a(href=post.url)  #{post.title} 
