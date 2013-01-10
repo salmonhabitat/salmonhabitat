@@ -1,7 +1,7 @@
 !!! 5
 html
   head
-    title SHARE | #{title}
+    title SHARE #{title}
     
     block meta
       meta(charset='utf-8')
@@ -12,7 +12,6 @@ html
       link(rel='stylesheet', href='/stylesheets/style.css')
 
     block javascripts
-      script(src='/javascripts/moment.min.js')
       script(src='http://use.typekit.com/iyv6vkd.js')
       script
         try{Typekit.load();}catch(e){}
@@ -20,7 +19,7 @@ html
   body
     header
       .left
-        a(href='/'): img.title(src='/images/logo.png')
+        h1: a(href='/') Salmonhabitat
       .right
         nav
           include includes/nav
