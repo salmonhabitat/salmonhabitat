@@ -1,9 +1,6 @@
-var express = require('express');
-var http = require('http');
-var poet = require('poet');
-var moment = require('moment');
-var stylus = require('stylus');
-var nib = require('nib');
+var express = require('express')
+  , poet = require('poet')
+  , stylus = require('stylus');
 
 var app = express.createServer();
 
@@ -18,10 +15,8 @@ function compile(str, path) {
   return stylus(str)
     .set('filename', path)
     .set('compress', true)
-    .use(nib());
+    .use(require('nib')());
  }
-
-// Configuration
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3344 );
@@ -61,8 +56,6 @@ app.get('/about/steve', about.steve);
 app.get('/about/jacques', about.jacques);
 app.get('/about/interns', about.interns);
 
-// Server
-
-http.createServer(app).listen(app.get('port'), function(){
+require('http').createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
