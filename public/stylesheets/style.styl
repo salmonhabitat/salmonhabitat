@@ -4,29 +4,35 @@
 @import base
 @import css3-gmail-style
 
+body
+  border 10px solid #eee
 
 .container
   width 80%
+  margin 0 auto
+  margin-top 5em
 
 header
-  width 100%
-  border-bottom 5px solid #eee
+  h1
+    font-size 3rem
+    margin 0
+
+.nav
   position relative
-  nav
-    position relative
-    top 60px
-    li
-      text-transform uppercase
-      font-weight bold
-      display inline
-      margin-right 0.5em
-      a
-        padding 5px 10px
-        border-radius 5px
+  left -10px
+  top 2em
+  li
+    text-transform uppercase
+    font-weight bold
+    display inline
+    margin-right 0.5em
+    a
+      padding 5px 10px
+      border-radius 5px
+      transition background 1s ease
+      &:hover
+        background rgba(0,0,0,0.2)
         transition background 1s ease
-        &:hover
-          background rgba(0,0,0,0.2)
-          transition background 1s ease
 
 .content
   margin-bottom 10em
@@ -40,22 +46,7 @@ header
 
 .footer
   clear both
-  background #eee
   border-top 2px solid #eee
-  ul
-    display inline-block
-    width 33%
-    text-align center
-    li
-      display inline
-      margin-right 5px
-      a
-        font-weight bold
-        text-transform uppercase
-    &.social
-      li
-        display inline
-        margin-left 5px
 
 .about 
   img
@@ -99,22 +90,12 @@ header
 ul.posts li
   text-transform uppercase
 
-.version
-  text-transform uppercase
-  font-size 0.8rem
-  color red
-  vertical-align bottom
-  float right
-
-.left, .right
-  padding 0 1%
-
 .left
-  width 60%
+  width 64%
   float left
 
 .right
-  width 36%
+  width 31%
   float right
 
 // Site Specific

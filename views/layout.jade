@@ -17,16 +17,16 @@ html
         try{Typekit.load();}catch(e){}
 
   body
-    header
-      .left
-        h1: a(href='/') Salmonhabitat
-      .right
-        nav
-          include includes/nav
     .container
-      .content.left
-        block content
-      .sidebar.right
+      .left
+        header
+          h1.title: a(href='/') Salmonhabitat
+        .content
+          block content
+
+      .right
+        include includes/nav
         include includes/sidebar
-    .footer
-      include includes/footer
+
+      .footer
+        include includes/footer
