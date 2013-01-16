@@ -2,7 +2,7 @@ var express = require('express')
   , poet = require('poet')
   , stylus = require('stylus');
 
-var app = express.createServer();
+var app = express();
 
 poet(app)
   .createPostRoute()
