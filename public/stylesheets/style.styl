@@ -1,22 +1,93 @@
 @import 'nib'
-@import colors
 @import normalize
-@import base
 @import css3-gmail-style
+@import 'nib'
+
+// ===== COLORS =====
+
+$default = #444444
+$alternate = #AAAAAA
+$structure = #EEEEEE
+$brand = #357AEB
+
+// ===== TYPOGRAPHY =====
+
+$primary-font = "ff-meta-serif-web-pro", sans-serif
+$secondary-font = "franklin-gothic-urw-con-sc", sans-serif
+
+h1, .nav li
+  font-family $primary-font
+  font-weight normal
+
+h2, h3
+  font-family $primary-font
+
+h1
+  font-size 3rem
+  margin-bottom 1rem
+
+h2
+  font-size 1.4rem
+  margin-bottom 1rem
+
+h3
+  font-size 1.2rem
+  margin-bottom 1rem
+
+p, li
+  color $default
+  font-family $primary-font
+  font-size 1rem
+  line-height 1.5
+  margin-bottom 1rem
+
+a
+  color $default
+  text-decoration none
+  transition color 1s ease
+  &:hover
+    color $brand
+    transition color 1s ease
+
+ul
+  padding-left 0
+
+li
+  list-style-type none
+
+iframe
+  width 100%
+  height 400px
+
+input
+  font-family $primary-font
+
+// ===== LAYOUT =====
 
 body
-  border 10px solid #eee
+  border 10px solid $structure
+  color $default
 
 .container
   width 80%
   margin 0 auto
   margin-top 5em
 
+.left
+  width 64%
+  float left
+
+.right
+  width 31%
+  float right
+
 header
   h1
     font-size 3.2rem
     font-weight bold
     margin 0
+    padding-bottom 10px
+    border-bottom 10px solid $structure
 
 .nav
   position relative
@@ -29,41 +100,38 @@ header
     margin-right 0.5em
     a
       padding 5px 10px
-      border-radius 5px
-      transition background 1s ease
+      transition color 0.5s ease
       &:hover
-        background rgba(0,0,0,0.2)
-        transition background 1s ease
+        border-bottom 5px solid rgba(0,0,0,0.1)
+        transition color 0.5s ease
+
+section
+  border-bottom 5px solid $structure
+  padding 1em 0
 
 .content
   margin-bottom 10em
-  ul
-    margin-left 2em
-    margin-bottom 0
   img
     width 100%
   a
     font-weight bold
 
-.post
-  h1 a
-    font-weight normal
-    font-size 2rem
+.sidebar
+  margin-top 5em
+  h1
+    font-size 0.9rem
+    color $alternate
+    text-transform uppercase
+    margin 2em 0 0 0 
+  p, li, ul
+    margin 0
+  input
+    font-size 0.9rem
 
 .footer
   clear both
-  border-top 2px solid #eee
 
-.about 
-  img
-    float right
-    width 200px
-    margin-left 1em
-
-// Utility classes
-
-.attention
-  background $structure
+// ===== UTILITY CLASSES =====
 
 .pad
   padding 0.5em
@@ -74,44 +142,24 @@ header
 .us
   .person
     display inline-block
-    width 30%
-    margin 0 1.3%
+    width 33%
     vertical-align bottom
     p
       text-align center
-      text-transform uppercase
-      font-weight bold
-    img
-      width 100%
-
-.board
-  li
-    margin 0.5em 0
-    h3, p
-      margin 0
-    h3
-      font-size 1.2em
-    p
 
 ul.posts li
   text-transform uppercase
 
-.left
-  width 64%
-  float left
+ul.board li 
+  display inline-block
+  width 50%
+  vertical-align top
 
-.right
-  width 31%
+img.thumbnail
+  width 40%
   float right
+  padding-left 1em
 
-// Site Specific
-
-.sidebar
-  h1
-    font-size 1.2rem
-    color $secondary
-    margin 2em 0 0 0 
-  p, li, ul
-    margin 0
-  input
-    font-size 0.9rem
+.post li
+  list-style-type circle
+  margin 0

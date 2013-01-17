@@ -3,13 +3,13 @@ exports.index = function(req, res){
 };
 
 exports.steve = function(req, res){
-  res.render('employees/steve', { title: 'Steve Koenig' });
+  res.render('about/employees/steve', { title: 'Steve Koenig' });
 };
 
 exports.jacques = function(req, res){
-  res.render('employees/jacques', { title: 'Jacques Tardie' });
+  res.render('about/employees/jacques', { title: 'Jacques Tardie' });
 };
 
 exports.interns = function(req, res){
-  res.render('employees/interns', { title: 'Previously...' });
+  res.render('about/employees/interns', { title: 'Previously...' });
 };
