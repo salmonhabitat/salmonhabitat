@@ -4,7 +4,7 @@
     "salmonhabitat.org",
     "www.salmonhabitat.org"
   ],
-  "version": "0.0.1-7",
+  "version": "0.1.1-4",
   "private": true,
   "scripts": {
     "start": "node app.js"
