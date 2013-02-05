@@ -1,11 +1,23 @@
 .sidebar
-  h1 Newsletter
-  <form action="https://tinyletter.com/salmonhabitat" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/salmonhabitat', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Want to keep up with SHARE? This is the best way to do it! Enter your email address and we'll keep you posted.</label></p><br><p><input type="text" name="email" id="tlemail" /></p><br><input type="hidden" value="1" name="embed"/><input class="bttn blue" type="submit" value="Subscribe" /></form>
+  h1 Restoration Notes
+  <form action="https://tinyletter.com/salmonhabitat" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/salmonhabitat', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Want to keep up with SHARE? Add your email address and we'll keep you posted.</label></p><br><p><input type="text" name="email" id="tlemail" /></p><br><input type="hidden" value="1" name="embed"/><input class="bttn blue" type="submit" value="Subscribe" /></form>
 
-  h1 Upcoming
-  p Nothing at the moment.
+  h1 Upcoming Events
+  ul.events
+    li
+      h2 Jonesboro Habitat Restoration Meeting
+      p.date 2/11/2013
+      p.location Jonesboro DMR Office, Jonesboro, ME
+    li
+      h2 SHARE Quarterly
+      p.date 3/7/2013
+      p.location Hillgrove Community Center, Whitneyville, ME
+    li
+      h2 Maine Water Conference
+      p.date 3/19/2013
+      p.location Augusta Civic Center, Augusta, ME
 
-  h1 Posts
+  h1 Blog Archive
 
   - var posts = postList
   - var page = 1
@@ -13,8 +25,7 @@
     - each post in posts
       li: a(href=post.url)  #{post.title} 
 
-  h1 Social
+  h1 Links
   ul
     li: a(href='http://www.facebook.com/pages/Project-SHARE/283719411378') Facebook
-    li: a(href='https://twitter.com/salmonhabitat') Twitter
     li: a(href='http://www.flickr.com/photos/salmonhabitat') Flickr
