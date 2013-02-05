@@ -12,4 +12,4 @@ Supported by some *excellent* volunteers, we spent the last few days of August r
 - They alter the natural stream hydrology of the system, impeding sediment transport.
 - They increase water temperature, reducing the competitiveness of native species, and increasing it for exotics.
 
-And the thing is, they're everywhere! It was great to have to much help! If you're looking for some more evidence of the work we did, you can check out both [photos](https://www.dropbox.com/sh/4nvavnovc3qzqmg/47bafxgxoK) and  timelapses ([8/28](https://www.youtube.com/watch?v=LdIbsPuru4s&feature=plcp) and [8/29](https://www.youtube.com/watch?v=DoIajeO5Cl4&feature=plcp)).
+And the thing is, they're everywhere! It was great to have to much help! If you're looking for some more evidence of the work we did, you can check out both [photos](https://www.dropbox.com/sh/3v9wlhvwwuszqlf/4jVsI_6qny) and  timelapses ([8/28](https://www.youtube.com/watch?v=LdIbsPuru4s&feature=plcp) and [8/29](https://www.youtube.com/watch?v=DoIajeO5Cl4&feature=plcp)).
