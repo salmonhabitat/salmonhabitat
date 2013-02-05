@@ -56,6 +56,8 @@ app.get('/about/steve', about.steve);
 app.get('/about/jacques', about.jacques);
 app.get('/about/interns', about.interns);
 
+app.get('/admin', main.admin);
+
 require('http').createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });

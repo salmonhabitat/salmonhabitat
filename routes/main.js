@@ -17,3 +17,7 @@ exports.blog = function(req, res){
 exports.archive = function(req, res){
   res.render('archive', {title: 'Archive'});
 };
+
+exports.admin = function(req, res){
+  res.render('admin');
+};
