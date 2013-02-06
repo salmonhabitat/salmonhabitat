@@ -49,6 +49,12 @@ a
     color $brand
     transition color 1s ease
 
+blockquote
+  font-style italic
+  margin-left 0
+  padding-left 2em
+  border-left 5px solid $structure
+
 ul
   padding-left 0
 
@@ -61,6 +67,9 @@ iframe
 
 input
   font-family $primary-font
+
+object
+  width 100%
 
 // ===== LAYOUT =====
 
@@ -172,6 +181,12 @@ img.thumbnail
   float right
   padding-left 1em
 
-.post li
-  list-style-type circle
-  margin 0
+.post 
+  h2 span.date
+    font-style italic
+    font-size 80%
+    float right
+    color $brand
+  li
+    list-style-type circle
+    margin 0
