@@ -1,7 +1,11 @@
 .sidebar
   h1 Restoration Notes
-  <form action="https://tinyletter.com/salmonhabitat" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/salmonhabitat', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Want to keep up with SHARE? Add your email address and we'll keep you posted.</label></p><br><p><input type="text" name="email" id="tlemail" /></p><br><input type="hidden" value="1" name="embed"/><input class="bttn blue" type="submit" value="Subscribe" /></form>
-
+  form(action="http://salmonhabitat.us5.list-manage1.com/subscribe/post?u=bbf7105cbddd9f89c833c1613&amp;id=5fcccd1d8f", method="post", id="mc-embedded-subscribe-form" ,name="mc-embedded-subscribe-form", class="validate", target="_blank", novalidate)
+    p: label(for="mce-EMAIL") Want to keep up with SHARE? Add your email address and we'll keep you posted.
+    br
+    p: input(type="email", value="", name="EMAIL", class="email", id="mce-EMAIL", placeholder="Your email address", required)
+    br
+    input(type="submit", value="Subscribe", name="subscribe", id="mc-embedded-subscribe", class="bttn blue")
   h1 Upcoming Events
   ul.events
     li
