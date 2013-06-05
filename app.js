@@ -38,25 +38,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-// Routes 
-
-var main = require('./routes/main');
-var about = require('./routes/about');
-
-app.get('/', main.index);
-
-app.get('/blog', main.blog);
-app.get('/archive', main.archive);
-
-app.get('/resources', main.resources);
-app.get('/resources/sdss', main.sdss);
-
-app.get('/about', about.index);
-app.get('/about/steve', about.steve);
-app.get('/about/jacques', about.jacques);
-app.get('/about/interns', about.interns);
-
-app.get('/admin', main.admin);
+require('./routes')(app);
 
 require('http').createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

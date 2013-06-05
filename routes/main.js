@@ -1,23 +1,26 @@
-exports.index = function(req, res){
-  res.render('index', { title: 'Home' });
-};
+module.exports = function(app) {
 
-exports.resources = function(req, res){
-  res.render('resources', { title: 'Resources' });
-};
+  // Index
+  app.get('/', function(req, res) {
+    res.render('index', { title: 'Home' });
+  });
+ 
+  // About
+  app.get('/about', function(req, res) {
+    res.render('about', { title: 'About' });
+  });
 
-exports.sdss = function(req, res){
-  res.render('sdss', { title: 'SDSS' });
-};
+  app.get('/about/:employee', function(req, res) {
+    res.render('about/employees/' + req.params.employee );
+  });
 
-exports.blog = function(req, res){
-  res.render('blog', { title: 'Blog' });
-};
+  // Blog
+  app.get('/blog', function(req, res) {
+    res.render('blog', { title: 'Blog' });
+  });
 
-exports.archive = function(req, res){
-  res.render('archive', {title: 'Archive'});
-};
+  app.get('/blog/archive', function(req, res) {
+    res.render('archive', { title: 'Archive' });
+  });
 
-exports.admin = function(req, res){
-  res.render('admin');
 };
