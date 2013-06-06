@@ -1,5 +1,7 @@
 module.exports = function(app) {
 
+  app.get('/api', function(req, res) { res.render('api') });
+
   // GET all events
   app.get('/api/events', function(req, res) {
     events.find().toArray(function(err, result) { 
