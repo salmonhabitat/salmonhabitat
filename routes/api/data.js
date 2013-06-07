@@ -6,5 +6,7 @@ module.exports = function(app) {
 
 }
 
+var carto       = require('cartodb'),
+    credentials = require('../credentials');
 
-var base = 'http://jacques.cartodb.com/api/v2/sql?q=SELECT%20*%20FROM%20';
+var base        = 'http://jacques.cartodb.com/api/v2/sql?q=SELECT%20*%20FROM%20';
