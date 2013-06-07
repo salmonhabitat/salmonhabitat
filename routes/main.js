@@ -2,7 +2,9 @@ module.exports = function(app) {
 
   // Index
   app.get('/', function(req, res) {
-    res.render('index', { title: 'Home' });
+    res.render('index', { 
+      title: 'Home' 
+    });
   });
  
   // About
@@ -24,3 +26,7 @@ module.exports = function(app) {
   });
 
 };
+
+var db = require('mongoskin')
+      .db('mongodb://jacques:momaddie@linus.mongohq.com:10037/share')
+      .collection('events');
