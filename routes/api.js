@@ -30,4 +30,4 @@ module.exports = function(app) {
 
 }
 
-var events = require('../config').m.collection('events');
+var events = require('../credentials').m.collection('events');

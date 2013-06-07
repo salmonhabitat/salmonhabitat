@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
 package.json
+credentials.js
 
 public/stylesheets/style.css
