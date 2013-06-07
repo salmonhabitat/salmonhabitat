@@ -30,4 +30,4 @@ module.exports = function(app) {
 
 }
 
-var events = require('mongoskin').db('mongodb://jacques:momaddie@linus.mongohq.com:10037/share').collection('events');
+var events = require('../config').m.collection('events');
