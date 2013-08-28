@@ -1,0 +1,42 @@
+{
+  "name": "salmonhabitat",
+  "version": "0.1.0",
+  "description": "SHARE's website",
+  "subdomain": "salmonhabitat",
+  "domains": [
+    "salmonhabitat.org",
+    "www.salmonhabitat.org"
+  ],
+  "main": "app.js",
+  "dependencies": {
+    "cartodb": "~0.1.1",
+    "express": "~3.3.7",
+    "jade": "~0.35.0",
+    "nib": "~1.0.1",
+    "poet": "~1.0.0-rc2",
+    "stylus": "~0.37.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salmonhabitat/salmonhabitat.git"
+  },
+  "keywords": [
+    "share",
+    "salmon",
+    "maine",
+    "atlantic",
+    "restoration",
+    "stream",
+    "machias",
+    "narraguagas"
+  ],
+  "author": "Jacques Tardie <hi@jacquestardie.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salmonhabitat/salmonhabitat/issues"
+  }
+}
