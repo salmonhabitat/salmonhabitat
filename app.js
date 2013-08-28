@@ -1,15 +1,14 @@
-var express = require('express')
-  , poet = require('poet')
-  , stylus = require('stylus');
+var express = require('express'),
+    app     = express(),
+    stylus  = require('stylus'),
+    Poet    = require('poet');
 
-var app = express();
+var poet = Poet(app, {
+  posts: './_posts/',
+  metaFormat: 'json'
+});
 
-poet(app)
-  .createPostRoute()
-  .createPageRoute()
-  .createTagRoute()
-  .createCategoryRoute()
-  .init();
+poet.init().then(function() {});
 
 function compile(str, path) {
   return stylus(str)
