@@ -14,11 +14,11 @@ Steve and I met up with Bobby van Riper's crew from [MEIF&W](http://www.maine.go
 
 ![](https://s3.amazonaws.com/salmonhabitat.org/posts/sundayRiver-dam.png)
 
-Usually, when we remove a remnant dam, we're removing a few crib logs that are the foundation of the dam structure. They're usually the biggest logs, and of course, being so low, also the hardest to. **This was not the case here.** This was the closest I've seen to a *'pristine'* dam.
+Usually, when we remove a remnant dam, we're removing a few crib logs that are the foundation of the dam structure. **This was not the case here.** This was the closest I've seen to a *'pristine'* dam.
 
 ![](https://s3.amazonaws.com/salmonhabitat.org/posts/sundayRiver-no_dam.png)
 
-Took us a day-and-a-half to remove the structure. Now the river has the opportunity to move and sort the substrate that had been stacking up above the dam as it naturally can. Fish of all species and sizes can move up and down what once was an impossible barrier.
+Took us a day-and-a-half to remove the structure. Now the river has the opportunity to move and sort the substrate that had been stacking up above the dam as it naturally can. Fish of all species and sizes can move up and down what once was an impassible barrier.
 
 This was a great project to do, and I want to thank everyone that helped to make it happen.
 
