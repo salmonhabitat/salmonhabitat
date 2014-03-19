@@ -1,11 +1,7 @@
-{{{
-	"title": "Bog stream dam removal",
-	"tags": ["project", "dam", "backwater"],
-	"date": "2013-12-10"
-}}}
-
-<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/jacques.ggo427b7/mm/zoompan,zoomwheel.html?secure=1#15/44.7371/-67.9334'></iframe>
-
+---
+title: Bog Stream remnant dam removal
+layout: post
+---
 Earlier this summer, SHARE spent some time working to remove a dam on Bog Stream. The dam was causing a significant impoundment, blocking fish passage, and raising temperatures.
 
 ![](https://s3.amazonaws.com/salmonhabitat.org/posts/bog-before.jpg)
@@ -17,5 +13,3 @@ The project was brought to SHARE's attention by a representative of the landowne
 Funding for the project was provided by The [GOMC/NOAA Habitat Restoration Partnership Grant](http://www.gulfofmaine.org/gomt/?p=1374) and a matching grant from [The Nature Conservancy](http://www.nature.org/).
 
 ![](https://s3.amazonaws.com/salmonhabitat.org/posts/bog-after.jpg)
-
-– Jacques

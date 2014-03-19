@@ -1,9 +1,6 @@
-{{{ 
-  "title": "Steve Koenig, 2012 Recovery Champion", 
-  "tags": ["outreach", "steve", "award"], 
-  "date": "5-19-2013" 
-}}}
-
+---
+title: Steve Koenig, 2012 Recovery Champion
+---
 It's a pleasure to announce that Steve has been named a USFWS' 2012 Recovery Champion!
 
 There's a great interview with him over at the USFWS Blog, ['Conserving the Nature of the Northeast'](http://usfwsnortheast.wordpress.com) that you should check out.
