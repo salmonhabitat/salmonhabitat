@@ -1,4 +1,4 @@
-// DEPENDENCIES
+// DEPENDENCIES & VARIABLES
 
 		@import '../../components/bower-bourbon/bourbon';
 
@@ -34,6 +34,8 @@
 		}
 
 		nav li { font-weight: bold; }
+
+		section { margin: 4em 0; }
 
 
 // UTILITY CLASSES
@@ -100,5 +102,19 @@
 			margin: 0 auto;
 			max-width: 40em;
 			h2 { text-align: center;}
+		}
+
+		.post-list { 
+			text-align: center;
+			li { list-style-type: none}
+		}
+
+		.post-title {
+			text-align: center;
+			ul { padding: 0; }
+			h2,
+			h3,
+			p.date { margin: 0; }
+			p.date { color: #aaa; }
 		}
 
