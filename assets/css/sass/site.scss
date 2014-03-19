@@ -25,6 +25,9 @@
 			}
 		}
 
+		li { list-style-type: none; }
+		ul { padding: 0; }
+
 
 // COMMON
 
@@ -61,10 +64,11 @@
 		.story-lead { font-weight: bold; }
 
 
-
 // LAYOUT
 
 		* { @include box-sizing(border-box); }
+		
+		body { border-bottom: 1em solid #eee; }
 
 		header {
 			padding: 1em;
@@ -76,6 +80,21 @@
 			font-size: 1rem;
 			img { height: 80px; }
 			align-items: center;
+		}
+
+		footer {
+			border-top: 1px dashed #eee;
+			margin-top: 2em;
+			padding: 2em 0;
+			ul {
+				display: inline-block;
+				vertical-align: top;
+				width: 32%;
+			}
+			li {
+				font-size: 90%;
+				&.footer-title { text-transform: uppercase; }
+			}
 		}
 
 		.logo {
