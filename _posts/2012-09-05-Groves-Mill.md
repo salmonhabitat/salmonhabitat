@@ -1,9 +1,7 @@
-{{{ 
-  "title": "Groves Mill remnant dam removal", 
-  "tags": ["dam", "fieldwork", "old stream"], 
-  "date": "9-5-2012" 
-}}}
-
+---
+title: Groves Mill Remnant Dam Removal
+layout: post
+---
 ![pre downstream looking up](https://s3.amazonaws.com/salmonhabitat.org/posts/groves_pre_downstream_looking_up.jpg)
 
 Supported by some *excellent* volunteers, we spent the last few days of August removing a remnant log drive dam at the Groves Mills site on Old Stream. Often, remnant log drive dams go unnoticed. Visibly subtle, their effects on the fish community can be dramatic. For instance:

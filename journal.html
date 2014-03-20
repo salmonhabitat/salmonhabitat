@@ -1,0 +1,30 @@
+---
+layout: default
+title: Journal
+---
+{% include header.html %}
+
+<div class='content'>
+	{% for post in site.posts | limit: 1 %}
+		<article>
+			<div class='post-title'>
+				<h2><a href='{{ post.url }}'>{{ post.title}}</a></h2>
+				<p class='date'>{{ post.date | date: "%B %m, %Y" }}</p>
+			</div>
+			{{ post.content }}
+		</article>
+	{% endfor %}
+
+	<div class='post-list'>
+		<h2>Read more</h2>
+		<ul>
+			{% for post in site.posts %}
+				<li>
+					<h3><a href='{{ post.url }}'>{{ post.title }}</a></h3>
+					<p class='date'>{{ post.date | date: "%B %m, %Y" }}</p>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+			
+</div>

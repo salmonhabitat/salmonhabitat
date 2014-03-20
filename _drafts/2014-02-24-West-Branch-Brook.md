@@ -1,9 +1,6 @@
-{{{
-	"title": "West Branch Brook",
-	"tags" ["project", "dam"],
-	"date": "2014-02-24"
-}}}
-
+---
+title: West Branch Brook
+---
 Summary
 -------
 
