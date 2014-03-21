@@ -39,6 +39,18 @@ nav li {
 section {
   margin: 4em 0; }
 
+.story-intro {
+  background: url(https://s3.amazonaws.com/salmonhabitat.org/posts/groves_pre_downstream_looking_up.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 400px;
+  margin-top: 0; }
+  .story-intro h1 {
+    color: white; }
+  .story-intro .blurb {
+    margin: 0 auto;
+    max-width: 40rem;
+    padding-top: 4em; }
+
 .blurb {
   text-align: center; }
 

@@ -40,6 +40,19 @@
 
 		section { margin: 4em 0; }
 
+		.story-intro {
+			background: url(https://s3.amazonaws.com/salmonhabitat.org/posts/groves_pre_downstream_looking_up.jpg) no-repeat center center fixed;
+			background-size: cover;
+			h1 { color: white; }
+			min-height: 400px;
+			margin-top: 0;
+			.blurb {
+				margin: 0 auto;
+				max-width: 40rem;
+				padding-top: 4em;
+			}
+		}
+
 
 // UTILITY CLASSES
 
@@ -136,4 +149,3 @@
 			p.date { margin: 0; }
 			p.date { color: #aaa; }
 		}
-
