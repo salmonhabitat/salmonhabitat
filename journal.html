@@ -2,8 +2,6 @@
 layout: default
 title: Journal
 ---
-{% include header.html %}
-
 <div class='content'>
 	{% for post in site.posts | limit: 1 %}
 		<article>
@@ -20,8 +18,8 @@ title: Journal
 		<ul>
 			{% for post in site.posts %}
 				<li>
-					<h3><a href='{{ post.url }}'>{{ post.title }}</a></h3>
-					<p class='date'>{{ post.date | date: "%B %m, %Y" }}</p>
+					<span class='post-list-date'>{{ post.date | date: "%B %m, %Y" }}</span>
+					<span class='post-list-title'><a href='{{ post.url }}'>{{ post.title }}</a></span>
 				</li>
 			{% endfor %}
 		</ul>

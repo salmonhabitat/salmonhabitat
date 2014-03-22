@@ -149,3 +149,16 @@ nav ul {
     margin: 0; }
   .post-title p.date {
     color: #aaa; }
+
+.post-list-date,
+.post-list-title {
+  display: inline-block;
+  width: 40%; }
+
+.post-list-date {
+  text-align: right;
+  margin-right: 1em; }
+
+.post-list-title {
+  text-align: left;
+  margin-left: 1em; }

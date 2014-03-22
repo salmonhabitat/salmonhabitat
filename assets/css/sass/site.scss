@@ -149,3 +149,20 @@
 			p.date { margin: 0; }
 			p.date { color: #aaa; }
 		}
+
+
+
+.post-list-date,
+.post-list-title {
+	display: inline-block;
+	width: 40%;
+}
+
+.post-list-date { 
+	text-align: right;
+	margin-right: 1em;
+}
+.post-list-title { 
+	text-align: left;
+	margin-left: 1em;
+}
