@@ -1,7 +1,8 @@
 body {
   line-height: 1.6;
   font-family: "freight-sans-pro";
-  color: #444; }
+  color: #444444;
+  border-bottom: 1em solid #eeeeee; }
 
 h1 {
   font-size: 1.8em; }
@@ -11,13 +12,13 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #395E42;
-  border-bottom: 1px solid #93C2A0;
+  color: #222222;
+  border-bottom: 1px solid #509adf;
   -webkit-transition: 0.1s ease-in;
   -moz-transition: 0.1s ease-in;
   transition: 0.1s ease-in; }
   a:hover {
-    border-bottom: 1px solid #395E42;
+    border-bottom: 1px solid #58607a;
     -webkit-transition: 0.1s ease-out;
     -moz-transition: 0.1s ease-out;
     transition: 0.1s ease-out; }
@@ -28,49 +29,61 @@ li {
 ul {
   padding: 0; }
 
+.bold {
+  font-weight: bold; }
+
+.capitalize {
+  text-transform: uppercase; }
+
+.center, .story-intro .blurb, .content {
+  margin: 0 auto;
+  max-width: 40rem; }
+
+.panes {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top; }
+
+.pane--left {
+  text-align: right; }
+
+.pane--right {
+  text-align: left; }
+
 .logo:hover {
   opacity: 0.7; }
 .logo a {
   border: none; }
 
-nav li {
-  font-weight: bold; }
-
-section {
-  margin: 4em 0; }
-
 .story-intro {
+  margin-top: 0;
   background: url(https://s3.amazonaws.com/salmonhabitat.org/posts/groves_pre_downstream_looking_up.jpg) no-repeat center center fixed;
-  background-size: cover;
-  min-height: 400px;
-  margin-top: 0; }
-  .story-intro h1 {
-    color: white; }
+  background-size: cover; }
   .story-intro .blurb {
-    margin: 0 auto;
-    max-width: 40rem;
-    padding-top: 4em; }
-
-.blurb {
-  text-align: center; }
+    text-align: center;
+    padding: 4em 0; }
+    .story-intro .blurb h1 {
+      color: white;
+      text-shadow: 1px 2px 1px #444; }
 
 .button {
-  border: 2px solid #395E42;
+  border: 2px solid #58607a;
+  border-bottom-width: 4px;
   border-radius: 2px;
-  background: #93C2A0;
+  background: #509adf;
   padding: .5em 1em;
   font-weight: bold;
   -webkit-transition: 0.1s ease-in;
   -moz-transition: 0.1s ease-in;
   transition: 0.1s ease-in; }
   .button a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     border: none; }
     .button a:hover {
       border: none; }
   .button:hover {
-    background: #598F66;
+    background: #58607a;
     -webkit-transition: 0.1s ease-out;
     -moz-transition: 0.1s ease-out;
     transition: 0.1s ease-out; }
@@ -78,41 +91,34 @@ section {
 .content img {
   width: 100%; }
 
-.story-lead {
-  font-weight: bold; }
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  border-bottom: 1em solid #eee; }
+section {
+  margin: 6em 0; }
 
 header {
-  padding: 1em;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row;
   flex-flow: row;
   flex-direction: row;
-  font-size: 1rem;
-  align-items: center; }
+  align-items: center;
+  padding: 1em 2em; }
   header img {
     height: 80px; }
 
 footer {
-  border-top: 1px dashed #eee;
+  font-size: 90%;
+  border-top: 1px dashed #eeeeee;
   margin-top: 2em;
   padding: 2em 0; }
   footer ul {
     display: inline-block;
     vertical-align: top;
     width: 32%; }
-  footer li {
-    font-size: 90%; }
-    footer li.footer-title {
-      text-transform: uppercase; }
 
 .logo {
   -webkit-flex: 1 1;
@@ -124,41 +130,22 @@ nav {
 
 nav li {
   display: inline;
-  margin-left: 1em; }
+  margin-left: 1em;
+  font-weight: bold; }
 nav ul {
   text-align: right; }
 
-.content {
-  margin: 0 auto;
-  max-width: 40em; }
-  .content h2 {
-    text-align: center; }
+.content h2 {
+  text-align: center; }
 
 .post-list {
   text-align: center; }
-  .post-list li {
-    list-style-type: none; }
 
 .post-title {
   text-align: center; }
-  .post-title ul {
-    padding: 0; }
   .post-title h2,
   .post-title h3,
   .post-title p.date {
     margin: 0; }
   .post-title p.date {
     color: #aaa; }
-
-.post-list-date,
-.post-list-title {
-  display: inline-block;
-  width: 40%; }
-
-.post-list-date {
-  text-align: right;
-  margin-right: 1em; }
-
-.post-list-title {
-  text-align: left;
-  margin-left: 1em; }

@@ -2,13 +2,22 @@
 
 		@import '../../components/bower-bourbon/bourbon';
 
+		$font-copy: "freight-sans-pro";
+
+		$color-base: #444;
+		$color-base-dark: #222;
+		$color-brand: #509ADF;
+		$color-brand-dark: #58607A;
+		$color-structure: #eee;
+
 
 // TYPOGRAPHY
 
 		body { 
 			line-height: 1.6;
-			font-family: "freight-sans-pro";
-			color: #444;
+			font-family: $font-copy;
+			color: $color-base;
+			border-bottom: 1em solid $color-structure;
 		}
 
 		h1 { font-size: 1.8em; }
@@ -16,11 +25,11 @@
 
 		a {
 			text-decoration: none;
-			color: #395E42;
-			border-bottom: 1px solid #93C2A0;
+			color: $color-base-dark;
+			border-bottom: 1px solid $color-brand;
 			@include transition(0.1s ease-in);
 			&:hover {
-				border-bottom: 1px solid #395E42;
+				border-bottom: 1px solid $color-brand-dark;
 				@include transition(0.1s ease-out);
 			}
 		}
@@ -28,6 +37,20 @@
 		li { list-style-type: none; }
 		ul { padding: 0; }
 
+		.bold {	font-weight: bold; }
+		.capitalize { text-transform: uppercase; }
+		.center {
+			margin: 0 auto;
+			max-width: 40rem;
+		}
+
+		.panes {
+			display: inline-block;
+			width: 49%;
+			vertical-align: top;
+		}
+		.pane--left { text-align: right; }
+		.pane--right {text-align: left; }
 
 // COMMON
 
@@ -36,69 +59,63 @@
 			a { border: none; }
 		}
 
-		nav li { font-weight: bold; }
-
-		section { margin: 4em 0; }
-
 		.story-intro {
+			margin-top: 0;
 			background: url(https://s3.amazonaws.com/salmonhabitat.org/posts/groves_pre_downstream_looking_up.jpg) no-repeat center center fixed;
 			background-size: cover;
-			h1 { color: white; }
-			min-height: 400px;
-			margin-top: 0;
 			.blurb {
-				margin: 0 auto;
-				max-width: 40rem;
-				padding-top: 4em;
+				@extend .center;
+				text-align: center;
+				padding: 4em 0;
+				h1 {
+					color: white;
+					text-shadow: 1px 2px 1px #444;
+				}
 			}
 		}
 
-
-// UTILITY CLASSES
-
-		.blurb { text-align: center; }
 		.button {
-			border: 2px solid #395E42;
+			border: 2px solid $color-brand-dark;
+			border-bottom-width: 4px;
 			border-radius: 2px;
-			background: #93C2A0;
+			background: $color-brand;
 			padding: .5em 1em;
 			font-weight: bold;
 			@include transition(0.1s ease-in);
 			a { 
-				text-decoration: none;
 				color: white;
+				text-decoration: none;
 				border: none;
 				&:hover { border: none; }
 			}
 			&:hover {
-				background: #598F66;
+				background: $color-brand-dark;
 				@include transition(0.1s ease-out);
 			}
 		}
+
 		.content img { width: 100%; }
-		.story-lead { font-weight: bold; }
 
 
 // LAYOUT
 
 		* { @include box-sizing(border-box); }
+		section { margin: 6em 0; }
 		
-		body { border-bottom: 1em solid #eee; }
-
 		header {
-			padding: 1em;
 			display: -webkit-flex;
-			display:				 flex;
+			display: flex;
 			-webkit-flex-flow: row;
-							flex-flow: row;
-							flex-direction: row;
-			font-size: 1rem;
-			img { height: 80px; }
+			flex-flow: row;
+			flex-direction: row;
 			align-items: center;
+			padding: 1em 2em;
+			img { height: 80px; }
 		}
 
 		footer {
-			border-top: 1px dashed #eee;
+			font-size: 90%;
+			border-top: 1px dashed $color-structure;
 			margin-top: 2em;
 			padding: 2em 0;
 			ul {
@@ -106,63 +123,31 @@
 				vertical-align: top;
 				width: 32%;
 			}
-			li {
-				font-size: 90%;
-				&.footer-title { text-transform: uppercase; }
-			}
 		}
 
-		.logo {
-			-webkit-flex: 1 1;
-							flex: 1 1;
-		}
-
-		nav {
-			-webkit-flex: 4 1;
-							flex: 4 1;
-		}
+		.logo { -webkit-flex: 1 1; flex: 1 1; }
+		nav { -webkit-flex: 4 1; flex: 4 1; }
 
 		nav {
 			li { 
 				display: inline;
 				margin-left: 1em;
+				font-weight: bold;
 			}
 			ul { text-align: right; }
 		}
 
 		.content {
-			margin: 0 auto;
-			max-width: 40em;
+			@extend .center;
 			h2 { text-align: center;}
 		}
 
-		.post-list { 
-			text-align: center;
-			li { list-style-type: none}
-		}
+		.post-list { text-align: center; }
 
 		.post-title {
 			text-align: center;
-			ul { padding: 0; }
 			h2,
 			h3,
 			p.date { margin: 0; }
 			p.date { color: #aaa; }
 		}
-
-
-
-.post-list-date,
-.post-list-title {
-	display: inline-block;
-	width: 40%;
-}
-
-.post-list-date { 
-	text-align: right;
-	margin-right: 1em;
-}
-.post-list-title { 
-	text-align: left;
-	margin-left: 1em;
-}
