@@ -3,10 +3,13 @@ layout: default
 title: Journal
 ---
 <div class='content'>
+
 	{% for post in site.posts | limit: 1 %}
 		<article>
 			<div class='post-title'>
-				<h2><a href='{{ post.url }}'>{{ post.title}}</a></h2>
+				<h2>
+					<a href='{{ post.url }}'>{{ post.title}}</a>
+				</h2>
 				<p class='date'>{{ post.date | date: "%B %m, %Y" }}</p>
 			</div>
 			{{ post.content }}
@@ -18,8 +21,8 @@ title: Journal
 		<ul>
 			{% for post in site.posts %}
 				<li>
-					<span class='post-list-date'>{{ post.date | date: "%B %m, %Y" }}</span>
-					<span class='post-list-title'><a href='{{ post.url }}'>{{ post.title }}</a></span>
+					<span class='panes pane--left'>{{ post.date | date: "%B %m, %Y" }}</span>
+					<span class='panes pane--right'><a href='{{ post.url }}'>{{ post.title }}</a></span>
 				</li>
 			{% endfor %}
 		</ul>
