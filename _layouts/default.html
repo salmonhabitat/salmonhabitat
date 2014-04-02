@@ -17,8 +17,10 @@
 
 	<body>
 		{% include header.html %}
-		{{ content }}
-		{% include footer.html %}
+			<div class='container'>
+			{{ content }}
+			{% include footer.html %}
+		</div>
 
 		<!-- JAVASCRIPTS -->
 		<script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.min.js'></script>

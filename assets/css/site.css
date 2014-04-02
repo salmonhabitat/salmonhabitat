@@ -1,27 +1,29 @@
 body {
-  line-height: 1.6;
-  font-family: "freight-sans-pro";
   color: #444444;
-  border-bottom: 1em solid #eeeeee; }
+  font-family: "freight-sans-pro";
+  line-height: 1.6; }
 
-h1 {
-  font-size: 1.8em; }
+h2,
+h3 {
+  font-family: "brandon-grotesque";
+  font-weight: 500;
+  text-transform: uppercase; }
+
+p,
+li {
+  font-size: 16px; }
 
 h2 {
-  font-size: 1.4em; }
+  font-size: 22.624px; }
+
+h1 {
+  font-size: 31.99034px; }
 
 a {
   text-decoration: none;
-  color: #222222;
-  border-bottom: 1px solid #509adf;
-  -webkit-transition: 0.1s ease-in;
-  -moz-transition: 0.1s ease-in;
-  transition: 0.1s ease-in; }
+  color: #509adf; }
   a:hover {
-    border-bottom: 1px solid #58607a;
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out; }
+    color: #58607a; }
 
 li {
   list-style-type: none; }
@@ -29,53 +31,23 @@ li {
 ul {
   padding: 0; }
 
-.bold {
-  font-weight: bold; }
+table {
+  line-height: 1;
+  width: 100%;
+  border-collapse: collapse; }
 
-.capitalize {
-  text-transform: uppercase; }
-
-.center, .story-intro .blurb, .content {
-  margin: 0 auto;
-  max-width: 40rem; }
-
-.panes {
-  display: inline-block;
-  width: 49%;
-  vertical-align: top; }
-
-.pane--left {
-  text-align: right; }
-
-.pane--right {
-  text-align: left; }
-
-.logo:hover {
-  opacity: 0.7; }
-.logo a {
-  border: none; }
-
-.story-intro {
-  margin-top: 0;
-  background: url(https://s3.amazonaws.com/salmonhabitat.org/posts/groves_pre_downstream_looking_up.jpg) no-repeat center center fixed;
-  background-size: cover; }
-  .story-intro .blurb {
-    text-align: center;
-    padding: 4em 0; }
-    .story-intro .blurb h1 {
-      color: white;
-      text-shadow: 1px 2px 1px #444; }
+table td,
+table th {
+  border-collapse: collapse;
+  padding: 5px;
+  border-bottom: 1px solid #f2f2f2; }
 
 .button {
   border: 2px solid #58607a;
   border-bottom-width: 4px;
-  border-radius: 2px;
   background: #509adf;
   padding: .5em 1em;
-  font-weight: bold;
-  -webkit-transition: 0.1s ease-in;
-  -moz-transition: 0.1s ease-in;
-  transition: 0.1s ease-in; }
+  font-weight: bold; }
   .button a {
     color: white;
     text-decoration: none;
@@ -83,51 +55,135 @@ ul {
     .button a:hover {
       border: none; }
   .button:hover {
-    background: #58607a;
+    background: #58607a; }
+
+.post-list,
+.post-title,
+.employees li,
+.about h1,
+.about h2,
+.content h2,
+.content h3 {
+  text-align: center; }
+
+.bold {
+  font-weight: bold; }
+
+.inline {
+  display: inline; }
+
+.lighten {
+  color: #888888; }
+
+.darken {
+  color: #222222; }
+
+.lead {
+  font-size: 120%; }
+
+.align-right {
+  text-align: right; }
+
+.center, .content {
+  margin: 0 auto;
+  max-width: 40rem; }
+
+.standard-radius, .button, .blurb h1, nav li.help a {
+  border-radius: 0px; }
+
+.transition, a, .button {
+  -webkit-transition: 0.1s ease-in;
+  -moz-transition: 0.1s ease-in;
+  transition: 0.1s ease-in; }
+  .transition:hover, a:hover, .button:hover {
     -webkit-transition: 0.1s ease-out;
     -moz-transition: 0.1s ease-out;
     transition: 0.1s ease-out; }
-
-.content img {
-  width: 100%; }
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-section {
+.content img {
+  width: 100%; }
+
+.panes {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top; }
+
+section,
+article {
   margin: 6em 0; }
 
+section:first-of-type {
+  margin-top: 10em; }
+
+article h2 a {
+  color: #444444; }
+
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  line-height: 1;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row;
   flex-flow: row;
   flex-direction: row;
   align-items: center;
-  padding: 1em 2em; }
+  padding: 0.25em 2em;
+  font-weight: bold; }
   header img {
-    height: 80px; }
+    height: 40px; }
+  header a {
+    color: white; }
 
 footer {
-  font-size: 90%;
   border-top: 1px dashed #eeeeee;
   margin-top: 2em;
-  padding: 2em 0; }
+  padding: 1em 0; }
   footer ul {
     display: inline-block;
     vertical-align: top;
     width: 32%; }
 
-.logo {
+.blurb {
+  text-align: center;
+  background: url(https://s3.amazonaws.com/salmonhabitat.org/story/overview/culvert-winter.jpg) no-repeat center center fixed;
+  background-size: cover;
+  border-bottom: 4px solid #eee;
+  padding: 10em 0; }
+  .blurb h1 {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 0px 20px; }
+
+.title h2,
+.title img {
+  display: inline-block;
+  margin-right: 1em; }
+.title img {
+  vertical-align: middle; }
+
+.title {
   -webkit-flex: 1 1;
   flex: 1 1; }
 
 nav {
-  -webkit-flex: 4 1;
-  flex: 4 1; }
+  -webkit-flex: 1 1;
+  flex: 1 1; }
 
+nav a {
+  color: white; }
+nav li.help a {
+  border: 2px solid #509adf;
+  padding: 5px 10px; }
 nav li {
   display: inline;
   margin-left: 1em;
@@ -135,17 +191,25 @@ nav li {
 nav ul {
   text-align: right; }
 
-.content h2 {
-  text-align: center; }
+.post-title h2,
+.post-title h3,
+.post-title p.date {
+  margin: 0; }
+.post-title p.date {
+  color: #aaa; }
 
-.post-list {
-  text-align: center; }
+.employees li {
+  height: 313px; }
 
-.post-title {
-  text-align: center; }
-  .post-title h2,
-  .post-title h3,
-  .post-title p.date {
-    margin: 0; }
-  .post-title p.date {
-    color: #aaa; }
+.employee {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  .employee:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
+
+.employee--jacques {
+  background: url(http://salmonhabitat.org/images/jacques.jpg); }
+
+.employee--steve {
+  background: url(http://salmonhabitat.org/images/steve-alt.jpg); }

@@ -2,122 +2,143 @@
 
 		@import '../../components/bower-bourbon/bourbon';
 
-		$font-copy: "freight-sans-pro";
-
-		$color-base: #444;
-		$color-base-dark: #222;
-		$color-brand: #509ADF;
-		$color-brand-dark: #58607A;
-		$color-structure: #eee;
+		$font-copy:					"freight-sans-pro";
+		$font-heading:			"brandon-grotesque";
+		$color-base:				#444;
+		$color-base-dark:		#222;
+		$color-base-light:	#888;
+		$color-brand:				#509ADF;
+		$color-brand-dark:	#58607A;
+		$color-structure:		#eee;
 
 
 // TYPOGRAPHY
 
 		body { 
-			line-height: 1.6;
-			font-family: $font-copy;
 			color: $color-base;
-			border-bottom: 1em solid $color-structure;
+			font-family: $font-copy;
+			line-height: 1.6;
 		}
 
-		h1 { font-size: 1.8em; }
-		h2 { font-size: 1.4em; }
+		h2,
+		h3 { 
+			font-family: $font-heading;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		p, 
+		li { font-size: modular-scale(16px, 0, 1.414); }
+		h2 { font-size: modular-scale(16px, 1, 1.414); }
+		h1 { font-size: modular-scale(16px, 2, 1.414); }
 
 		a {
+			@extend .transition;
 			text-decoration: none;
-			color: $color-base-dark;
-			border-bottom: 1px solid $color-brand;
-			@include transition(0.1s ease-in);
-			&:hover {
-				border-bottom: 1px solid $color-brand-dark;
-				@include transition(0.1s ease-out);
-			}
+			color: $color-brand;
+			&:hover { color: $color-brand-dark; }
 		}
 
 		li { list-style-type: none; }
 		ul { padding: 0; }
 
-		.bold {	font-weight: bold; }
-		.capitalize { text-transform: uppercase; }
-		.center {
-			margin: 0 auto;
-			max-width: 40rem;
+		table {
+			line-height: 1;
+			width: 100%;
+			border-collapse:collapse;
 		}
 
-		.panes {
-			display: inline-block;
-			width: 49%;
-			vertical-align: top;
-		}
-		.pane--left { text-align: right; }
-		.pane--right {text-align: left; }
-
-// COMMON
-
-		.logo {
-			&:hover { opacity: 0.7; }
-			a { border: none; }
-		}
-
-		.story-intro {
-			margin-top: 0;
-			background: url(https://s3.amazonaws.com/salmonhabitat.org/posts/groves_pre_downstream_looking_up.jpg) no-repeat center center fixed;
-			background-size: cover;
-			.blurb {
-				@extend .center;
-				text-align: center;
-				padding: 4em 0;
-				h1 {
-					color: white;
-					text-shadow: 1px 2px 1px #444;
-				}
-			}
+		table td,
+		table th {
+			border-collapse:collapse;
+			padding:5px;
+			border-bottom:1px solid #f2f2f2;
 		}
 
 		.button {
+			@extend .transition;
+			@extend .standard-radius;
 			border: 2px solid $color-brand-dark;
 			border-bottom-width: 4px;
-			border-radius: 2px;
 			background: $color-brand;
 			padding: .5em 1em;
 			font-weight: bold;
-			@include transition(0.1s ease-in);
 			a { 
 				color: white;
 				text-decoration: none;
 				border: none;
 				&:hover { border: none; }
 			}
-			&:hover {
-				background: $color-brand-dark;
-				@include transition(0.1s ease-out);
-			}
+			&:hover { background: $color-brand-dark; }
 		}
 
-		.content img { width: 100%; }
+		.post-list,
+		.post-title,
+		.employees li,
+		.about h1,
+		.about h2,
+		.content h2,
+		.content h3 { text-align: center; }
+
+// UTILITY CLASSES
+
+		.bold {	font-weight: bold; }
+		.inline { display: inline; }
+		.lighten { color: $color-base-light; }
+		.darken { color: $color-base-dark; }
+		.lead { font-size: 120%; }
+		.align-right { text-align: right; }
+		.center { margin: 0 auto; max-width: 40rem; }
+		.standard-radius { border-radius: 0px; }
+		.transition {
+			@include transition(0.1s ease-in);
+			&:hover { @include transition(0.1s ease-out); }
+		}
 
 
 // LAYOUT
 
 		* { @include box-sizing(border-box); }
-		section { margin: 6em 0; }
+		
+		.content img { width: 100%; }
+		
+		.panes {
+			display: inline-block;
+			width: 49%;
+			vertical-align: top;
+		}
+
+		section,
+		article { margin: 6em 0; }
+
+		section:first-of-type { margin-top: 10em; }
+
+		article h2 a { color: $color-base; }
 		
 		header {
-			display: -webkit-flex;
-			display: flex;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			background: rgba(0,0,0,0.7);
+			z-index: 2;
+			line-height: 1;
+
+			display:	-webkit-flex;
+			display:					flex;
 			-webkit-flex-flow: row;
-			flex-flow: row;
+							flex-flow: row;
 			flex-direction: row;
+
 			align-items: center;
-			padding: 1em 2em;
-			img { height: 80px; }
+			padding: 0.25em 2em;
+			font-weight: bold;
+			img { height: 40px; }
+			a { color: white; }
 		}
 
 		footer {
-			font-size: 90%;
 			border-top: 1px dashed $color-structure;
 			margin-top: 2em;
-			padding: 2em 0;
+			padding: 1em 0;
 			ul {
 				display: inline-block;
 				vertical-align: top;
@@ -125,10 +146,37 @@
 			}
 		}
 
-		.logo { -webkit-flex: 1 1; flex: 1 1; }
-		nav { -webkit-flex: 4 1; flex: 4 1; }
+		.blurb {
+			text-align: center;
+			background: url(https://s3.amazonaws.com/salmonhabitat.org/story/overview/culvert-winter.jpg)  no-repeat center center fixed;
+			background-size: cover;
+			border-bottom: 4px solid #eee;
+			padding: 10em 0;
+			h1 {
+				@extend .standard-radius;
+				color: white;
+				background: rgba(0,0,0,0.3);
+				display: inline-block;
+				padding: 0px 20px;
+			}
+		}
+
+		.title {
+			h2,
+			img { display: inline-block; margin-right: 1em; }
+			img { vertical-align: middle; }
+		}
+
+		.title { -webkit-flex: 1 1; flex: 1 1; }
+		nav { -webkit-flex: 1 1; flex: 1 1; }
 
 		nav {
+			a { color: white; }
+			li.help a { 
+				border: 2px solid $color-brand;
+				@extend .standard-radius;
+				padding: 5px 10px;
+			}
 			li { 
 				display: inline;
 				margin-left: 1em;
@@ -137,17 +185,24 @@
 			ul { text-align: right; }
 		}
 
-		.content {
-			@extend .center;
-			h2 { text-align: center;}
-		}
-
-		.post-list { text-align: center; }
+		.content { @extend .center; }
 
 		.post-title {
-			text-align: center;
 			h2,
 			h3,
 			p.date { margin: 0; }
 			p.date { color: #aaa; }
 		}
+
+		// EMPLOYEE STYLING
+		.employees li { height: 313px; }
+		.employee {
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			&:hover {
+				-webkit-filter: grayscale(0%);
+				filter: grayscale(0%);
+			}
+		}
+		.employee--jacques { background: url(http://salmonhabitat.org/images/jacques.jpg); }
+		.employee--steve { background: url(http://salmonhabitat.org/images/steve-alt.jpg); }

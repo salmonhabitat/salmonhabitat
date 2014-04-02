@@ -1,11 +1,13 @@
-<section class='about-board'>
+<section id='us' class='about-board'>
 	<h2>Our Board of Directors</h2>
-	<ul>
-		{% for member in site.data.board %}
-			<li>
-				<span class='member-name'>{{ member.name }}</span>
-				<span class='member-affiliation'>{{ member.organization }}</span>
-			</li>
-		{% endfor %}
-	</ul>
+	<table>
+		<tbody>
+			{% for member in site.data.board %}
+				<tr>
+					<td class='bold'>{{ member.name }}</td>
+					<td class='align-right'>{{ member.organization }}</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
 </section>
