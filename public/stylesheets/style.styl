@@ -1,0 +1,210 @@
+@import 'nib'
+@import css3-gmail-style
+@import 'nib'
+
+// ===== COLORS =====
+
+$default = #444444
+$alternate = #AAAAAA
+$structure = #EEEEEE
+$brand = #357AEB
+
+// ===== TYPOGRAPHY =====
+
+$primary-font = "ff-meta-serif-web-pro", sans-serif
+$secondary-font = "franklin-gothic-urw-con-sc", sans-serif
+
+h1, .nav li
+  font-family $primary-font
+  font-weight normal
+
+h2, h3
+  font-family $primary-font
+
+h1
+  font-size 3rem
+  margin-bottom 1rem
+
+h2
+  font-size 1.4rem
+  margin-bottom 1rem
+
+h3
+  font-size 1.2rem
+  margin-bottom 1rem
+
+p, li
+  color $default
+  font-family $primary-font
+  font-size 1rem
+  line-height 1.5
+  margin-bottom 1rem
+
+a
+  color $default
+  text-decoration none
+  transition color 1s ease
+  &:hover
+    color $brand
+    transition color 1s ease
+
+blockquote
+  font-style italic
+  margin-left 0
+  padding-left 2em
+  border-left 5px solid $structure
+
+code
+  background rgb(247, 243, 204)
+  font-size 90%
+  padding 0.25em 0.5em
+
+ul
+  padding-left 0
+  &.styled
+    li
+      margin 0
+      margin-left 2em
+      list-style-type circle
+
+li
+  list-style-type none
+
+iframe
+  width 100%
+  height 400px
+
+input
+  font-family $primary-font
+
+object
+  width 100%
+
+// ===== LAYOUT =====
+
+body
+  border 10px solid $structure
+  color $default
+
+.container
+  width 80%
+  margin 0 auto
+  margin-top 5em
+
+.left
+  width 64%
+  float left
+
+.right
+  width 31%
+  float right
+
+header
+  h1
+    font-size 3.2rem
+    font-weight bold
+    margin 0
+    padding-bottom 10px
+    border-bottom 10px solid $structure
+
+.nav
+  position relative
+  left -10px
+  top 2em
+  li
+    text-transform uppercase
+    font-weight bold
+    display inline
+    margin-right 0.5em
+    a
+      padding 5px 10px
+      transition color 0.5s ease
+      &:hover
+        border-bottom 5px solid rgba(0,0,0,0.1)
+        transition color 0.5s ease
+
+section
+  border-bottom 5px solid $structure
+  padding 1em 0
+
+.content
+  margin-bottom 10em
+  img
+    width 100%
+  a
+    font-weight bold
+
+.sidebar
+  margin-top 5em
+  h1
+    font-size 0.9rem
+    color $alternate
+    text-transform uppercase
+    margin 2em 0 0 0 
+  p, li, ul
+    margin 0
+  input, label, p, li, h2
+    font-size 0.9rem
+  ul.events
+    h2
+      margin 0
+    li
+      margin-bottom 1em
+    p.date
+      font-style italic
+
+.admin
+  li
+    list-style-type circle
+    margin 0
+
+.footer
+  padding 0.5em 1em
+  margin 5em 0
+  clear both
+  ul
+    margin 0
+  li
+    display inline
+    padding-right 1em
+    a
+      text-transform uppercase
+
+// ===== UTILITY CLASSES =====
+
+.pad
+  padding 0.5em
+
+.capitalize
+  text-transform uppercase
+
+.us
+  .person
+    display inline-block
+    width 33%
+    vertical-align bottom
+    p
+      text-align center
+
+ul.posts li
+  text-transform uppercase
+
+ul.board li 
+  display inline-block
+  width 50%
+  vertical-align top
+
+img.thumbnail
+  width 40%
+  float right
+  padding-left 1em
+
+.post 
+  h2 span.date
+    font-style italic
+    font-size 80%
+    float right
+    color $brand
+  li
+    list-style-type circle
+    margin 0
