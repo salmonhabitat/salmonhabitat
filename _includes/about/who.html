@@ -1,19 +1,29 @@
 <section id='us' class='about-who-we-are'>
 
 	<h2>Who We Are</h2>
-	<ul class='employees'>
-		<li class='employee employee--steve panes pane--left'></li>
-		<li class='employee employee--jacques panes pane--right'></li>
-	</ul>
 
-	<h3>Past employees</h3>
-	<p>A special thank you to
+		<div class='profile steve cf'>
+			<img alt='Steve Koenig' class='profile--image cf' src='http://salmonhabitat.org/images/steve-alt.jpg' />
+			<div class='profile--description'>
+				<h1>Steven Koenig</h1>
+				<p>Steven has been acting as SHARE's Executive Director since 2001, and as a general contractor for its restoration program since 2005.</p>
+			</div>
+		</div>
+
+		<div class='profile cf'>
+			<img alt='Jacques Tardie' class='profile--image' src='http://salmonhabitat.org/images/jacques.jpg' />
+			<div class='profile--description'>
+				<h1>Jacques Tardie</h1>
+				<p>Jacques has been with SHARE since 2008. He manages data, makes maps, and acts as general technical support.</p>
+			</div>
+		</div>
+
+
+
 		{% for employee in site.data.employees %}
-			<span class='darken'>
-				{{ employee.name }},
-			</span>
+			<div class='profile profile--past'>
+				<h1>{{ employee.name }}</h1>
+			</div>
 		{% endfor %}
-		for the incredible work and effort that they provided.
-	</p>
 
 </section>
