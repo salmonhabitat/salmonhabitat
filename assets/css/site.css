@@ -127,7 +127,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: #202020;
   z-index: 2;
   line-height: 1;
   display: -webkit-flex;
@@ -154,6 +154,8 @@ footer {
 
 .blurb {
   text-align: center;
+  position: relative;
+  top: 60px;
   background: url(https://s3.amazonaws.com/salmonhabitat.org/story/overview/culvert-winter.jpg) no-repeat center center fixed;
   background-size: cover;
   border-bottom: 4px solid #eee;
