@@ -13,6 +13,9 @@
 		<link rel='stylesheet' href='/assets/components/normalize-css/normalize.css' />
 		<!-- <link rel='stylesheet' href='/assets/components/glidejs/dist/css/style.css' /> -->
 		<link rel='stylesheet' href='/assets/css/site.css' />
+
+		<!-- Chartbeat -->
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
 	</head>
 
 	<body>
@@ -28,6 +31,23 @@
 		<!-- <script type='text/javascript' src='/assets/js/slider.js'></script> -->
 		<script type='text/javascript' src='//use.typekit.net/iyv6vkd.js'></script>
 		<script type='text/javascript'>try{Typekit.load();}catch(e){}</script>
+		<!-- Chartbeat -->
+		<script type="text/javascript">
+			  var _sf_async_config = { uid: 54717, domain: 'salmonhabitat.org', useCanonical: true };
+				  (function() {
+					    function loadChartbeat() {
+							      window._sf_endpt = (new Date()).getTime();
+							      var e = document.createElement('script');
+							      e.setAttribute('language', 'javascript');
+							      e.setAttribute('type', 'text/javascript');
+							      e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js');
+							      document.body.appendChild(e);
+							    };
+					    var oldonload = window.onload;
+					    window.onload = (typeof window.onload != 'function') ?
+					      loadChartbeat : function() { oldonload(); loadChartbeat(); };
+					  })();
+		</script>
 	</body>
 
 </html>
