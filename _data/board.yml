@@ -1,29 +1,47 @@
-- name: Dan Bowker
-  organization: Cherryfield Foods
-
-- name: Ed Hennessy
-  organization: Machias Savings Bank
-
-- name: Joan Trial
-  organization: Unaffiliated
-
-- name: John Burrows
-  organization: Atlantic Salmon Federation
-
-- name: Joshua Royte
-  organization: The Nature Conservancy
-
-- name: Keith Kanoti
-  organization: Maine Forest Service
-
-- name: Mark Berry
-  organization: Downeast Lakes Land Trust
-
-- name: Pat Sirois
-  organization: Maine Forest Council
-
-- name: Robert Murphy
+- name: Robert Murphy 
+  title: Chair
   organization: American Forestry Management
 
+- name: John Burrows
+  title: Vice-Chair
+  organization: Atlantic Salmon Federation
+
+- name: Edward Hennessey
+  title: Treasurer
+  organization: Machias Savings Bank
+
 - name: Travis Howard
-  organization: Wagner Forestry
+  title: Forester
+  organization: Wagner Forest Management
+
+- name: Mark Andrews
+  title: Forester
+  organization: Plum Creek
+
+- name: Patrick Sirois
+  title:   
+  organization: Sustainable Forestry Initiative, Maine Forest Products Council
+
+- name: Dan Bowker
+  title: Environmental Coordinator
+  organization:  Cherryfield Foods
+
+- name: David Montague
+  title:  Executive Director
+  organization: Downeast Lakes Land Trust
+
+- name: Josh Royte
+  title:  Environmental Planner
+  organization: The Nature Conservancy
+
+- name: Mike Brown
+  title:   Director of Fisheries
+  organization:  Maine Inland Fish and Wildlife
+
+- name: Oliver Cox  
+  title:   Director of the Division of Searun Fisheries
+  organization: Maine Department of Marine Resources
+
+- name: Ernie Atkinson 
+  title:  Alternate
+  organization: Marine Resource Scientist
