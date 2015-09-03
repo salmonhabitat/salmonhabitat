@@ -1,10 +1,11 @@
 <section id='us' class='about-board'>
-	<h2>Our Board of Directors</h2>
+	<h2>2015-16 Project SHARE Board of Directors</h2>
 	<table>
 		<tbody>
 			{% for member in site.data.board %}
 				<tr>
 					<td class='bold'>{{ member.name }}</td>
+					<td class=''>{{ member.title }}</td>
 					<td class='align-right'>{{ member.organization }}</td>
 				</tr>
 			{% endfor %}
