@@ -12,3 +12,17 @@
 		</tbody>
 	</table>
 </section>
+
+<section id='us' class='about-advisory'>
+	<h2>Project SHARE Advisory Committee</h2>
+	<table>
+		<tbody>
+			{% for member in site.data.advisory %}
+				<tr>
+					<td class='bold'>{{ member.name }}</td>
+					<td class='align-right'>{{ member.organization }}</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</section>
