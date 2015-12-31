@@ -156,15 +156,14 @@
 			padding: 1em 0;
 			text-align: center;
 			.donate {
-				margin-top: -4em;
+				margin: -4em auto 2em;
 			}
-			content {
+			.content {
 				padding-top: 4em;
 			}
 			ul {
 				display: inline-block;
 				vertical-align: top;
-				text-align: left;
 				width: 32%;
 			}
 		}
@@ -211,6 +210,7 @@
 				border: 2px solid $color-brand;
 				@extend .standard-radius;
 				padding: 5px 10px;
+				display: inline-block;
 			}
 			li { 
 				display: inline-block;
@@ -232,11 +232,11 @@
 
 
 .vcard {
-	text-align: center;
+	//text-align: center;
 	.fa {
 		padding-right: 1em;
 	}
-	.localit { padding-left: 1.8em; }
+	.locality { padding-left: 1.8em; }
 }
 
 .profile {
