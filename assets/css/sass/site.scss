@@ -150,6 +150,9 @@
 			}
 		}
 
+		.pre-footer {
+			text-align: center;
+		}
 		footer {
 			border-top: 1px dashed $color-structure;
 			margin-top: 2em;
@@ -233,15 +236,14 @@
 
 
 .vcard {
-	//text-align: center;
-	.fa {
-		padding-right: 1em;
+	h4 {
+		margin-bottom: 0;
 	}
-	.fa-fw {
-		width: 1.8em;
+	.fa {
+		padding-right: 2em;
 	}
 	h4,
-	.locality { padding-left: 1.8em; }
+	.locality { padding-left: 2em; }
 }
 
 .profile {
