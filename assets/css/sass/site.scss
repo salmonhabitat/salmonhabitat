@@ -75,6 +75,7 @@
 			&:hover { 
 				color: $color-brand; 
 				background: $white;
+				border: 2px solid $color-brand;
 			}
 		}
 
@@ -83,6 +84,7 @@
 		.employees li,
 		.about h1,
 		.about h2,
+		.content h1,
 		.content h2,
 		.content h3 { text-align: center; }
 
@@ -146,6 +148,7 @@
 			border-top: 1px dashed $color-structure;
 			margin-top: 2em;
 			padding: 1em 0;
+			text-align: center;
 			ul {
 				display: inline-block;
 				vertical-align: top;
@@ -170,7 +173,11 @@
 			}
 		}
 		.intro {
-			h2 span { font-weight: bold; }
+			font-size: 1.5em;
+			h2  {
+				text-transform: capitalize;
+				span { font-weight: bold; }
+			}
 		}
 		.title {
 			h2,
