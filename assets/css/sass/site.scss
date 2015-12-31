@@ -220,7 +220,8 @@
 			ul { text-align: right; }
 		}
 
-		.content { @extend .center; }
+		.content,
+		.pre-footer { @extend .center; }
 
 		.post-title {
 			h2,
@@ -236,6 +237,10 @@
 	.fa {
 		padding-right: 1em;
 	}
+	.fa-fw {
+		width: 1.8em;
+	}
+	h4,
 	.locality { padding-left: 1.8em; }
 }
 
