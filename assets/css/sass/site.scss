@@ -54,14 +54,15 @@
 			border-bottom:1px solid #f2f2f2;
 		}
 
-		.button {
+		.button
+		a.button {
 			@extend .transition;
 			@extend .standard-radius;
 			border: 2px solid $color-brand-dark;
-			border-bottom-width: 4px;
 			background: $color-brand;
 			padding: .5em 1em;
 			font-weight: bold;
+			color: white;
 			a { 
 				color: white;
 				text-decoration: none;
