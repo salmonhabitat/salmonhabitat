@@ -155,9 +155,16 @@
 			margin-top: 2em;
 			padding: 1em 0;
 			text-align: center;
+			.donate {
+				margin-top: -4em;
+			}
+			content {
+				padding-top: 4em;
+			}
 			ul {
 				display: inline-block;
 				vertical-align: top;
+				text-align: left;
 				width: 32%;
 			}
 		}
@@ -184,7 +191,7 @@
 				span { font-weight: bold; }
 			}
 			p, li {
-				font-size: 1.5em;
+				font-size: 1.1em;
 			}
 		}
 		.title {
