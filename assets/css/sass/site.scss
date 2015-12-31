@@ -8,7 +8,8 @@
 		$color-base-dark:			#222;
 		$color-base-light:			#888;
 		$color-brand:				#509ADF;
-		$color-brand-dark:			#58607A;
+		//$color-brand-dark:			#58607A;
+		$color-brand-dark:			darken($color-brand,10%);
 		$color-structure:			#eee;
 		$white:						#fff;
 
@@ -141,7 +142,12 @@
 			padding: 0.25em 2em;
 			font-weight: bold;
 			img { height: 40px; }
-			a { color: white; }
+			a { 
+				color: white;
+				&:hover {
+					color: $color-brand;
+				} 
+			}
 		}
 
 		footer {
@@ -173,10 +179,12 @@
 			}
 		}
 		.intro {
-			font-size: 1.5em;
 			h2  {
 				text-transform: capitalize;
 				span { font-weight: bold; }
+			}
+			p, li {
+				font-size: 1.5em;
 			}
 		}
 		.title {
