@@ -1,6 +1,7 @@
 ---
 layout: post
 author: jacques
+image: https://s3.amazonaws.com/salmonhabitat.org/west-branch-brook/culvert.jpg
 ---
 ![](https://s3.amazonaws.com/salmonhabitat.org/west-branch-brook/culvert.jpg)
 
