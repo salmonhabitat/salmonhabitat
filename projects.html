@@ -35,7 +35,7 @@ title: Journal
 						<a href='{{ post.url }}'>{{ post.title }}</a>
 						<span class='align-right'>{{ post.date | date: "%B %m, %Y" }}</span>
 						{% if post.image %}
-							<img src="{{ post.img }}" alt="{{ post.title }}">
+							<img src="{{ post.image }}" alt="{{ post.title }}">
 						{% endif %}
 					</article>
 				{% endfor %}
