@@ -1,6 +1,7 @@
 {{{ 
   "title": "Steve Koenig, 2012 Recovery Champion", 
   "tags": ["outreach", "steve", "award"], 
+  "layout": post,
   "date": "5-19-2013" 
 }}}
 

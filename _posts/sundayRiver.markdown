@@ -1,7 +1,8 @@
 {{{
 	"title": "Sunday River",
 	"tags": ["outreach", "dam", "griphoist"],
-	"date": "2013-09-09"
+	"date": "2013-09-09",
+	"layout": post
 }}}
 
 <iframe frameBorder='0' src='http://a.tiles.mapbox.com/v3/jacques.map-612s2qsj.html#18/44.501263268966625/-70.92153042554855'></iframe>

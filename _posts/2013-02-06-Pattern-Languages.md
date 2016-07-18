@@ -1,5 +1,6 @@
 ---
 title: Pattern Languages for Stream Restoration
+layout: post
 ---
 My first experience with SHARE was in 2008; it was my Junior year at [Nazareth](http://www.naz.edu/), and I was back in Maine for a few weeks. I volunteered, enjoyed it, and was hired the next year. That was the era of Stimulus funding, and for the next two years, SHARE pulled off close to 40 road-stream restoration projects annually. We were busy. Busy almost exclusively in the West Branch Machias and Old Stream watersheds. We ended up replacing the existing round culverts with open-bottom arches or decommissions on almost every perennial stream in those watersheds.
 

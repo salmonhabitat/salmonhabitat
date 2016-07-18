@@ -1,5 +1,7 @@
 ---
 title: Sunday River
+layout: post
+image: "https://s3.amazonaws.com/salmonhabitat.org/posts/sundayRiver-good_morning.png"
 ---
 SHARE spent a few days last week helping to remove a(nother) remnant dam on the Sunday River. 
 

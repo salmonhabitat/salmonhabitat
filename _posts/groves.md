@@ -1,7 +1,8 @@
 {{{ 
   "title": "Groves Mill remnant dam removal", 
   "tags": ["dam", "fieldwork", "old stream"], 
-  "date": "9-5-2012" 
+  "date": "9-5-2012",
+  "image": "https://s3.amazonaws.com/salmonhabitat.org/posts/groves_pre_downstream_looking_up.jpg"
 }}}
 
 ![pre downstream looking up](https://s3.amazonaws.com/salmonhabitat.org/posts/groves_pre_downstream_looking_up.jpg)

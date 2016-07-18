@@ -1,5 +1,6 @@
 ---
 title: Steve Koenig, 2012 Recovery Champion
+layout: post
 ---
 It's a pleasure to announce that Steve has been named a USFWS' 2012 Recovery Champion!
 
