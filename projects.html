@@ -5,21 +5,20 @@ title: Projects
 <div class='content'>
 	<section>
 
-		<div>
-			<h2>Projects</h2>
-			<ul>
-				{% for post in site.posts %}
-					<li>
-						<a href='{{ post.url }}'>
-							<h2>{{ post.title }}</h2>
-							<span class='align-right'>{{ post.date | date: "%B %m, %Y" }}</span>
-							{% if post.image %}
-								<img src="{{ post.image }}" alt="{{ post.title }}">
-							{% endif %}
-						</a>
-					</li>
-				{% endfor %}
-			</ul>
-		</div>
+		<h2>Projects</h2>
+		<ul class="projects">
+			{% for post in site.posts %}
+				<li>
+					<a href='{{ post.url }}'>
+						<h2>{{ post.title }}</h2>
+						<span class='align-right'>{{ post.date | date: "%B %m, %Y" }}</span>
+						{% if post.image %}
+							<img src="{{ post.image }}" alt="{{ post.title }}">
+						{% endif %}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+
 	</section>
 </div>

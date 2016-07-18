@@ -3,12 +3,13 @@ layout: default
 ---
 <div class='content'>
 	<article>
-		<div class='post-title'>
+		<header class='post-title'>
 			<h2>
 				<a href='{{ page.url}}'>{{ page.title }}</a>
 			</h2>
 			<p class='date'>{{ page.date | date: "%B %m, %Y "}}</p>
-		</div>
+		</header>
 		{{ content }}
 	</article>
+	<a href='/projects'>See more SHARE projects</a>
 </div>
