@@ -241,14 +241,17 @@
 				position: relative;
 				display: inline-block;
 				max-width: 45%;
-				margin: 2%;
+				margin: 2% 2% 1.5em;
 				padding: 0;
-				vertical-align: top;
+				//vertical-align: top;
 				line-height: 1.5em;
 				overflow: hidden;
-				max-height: 250px;
-  				img {
-					
+				max-height: 300px;
+				text-align: center;
+				background-color: #e0dddd;
+				background: linear-gradient(#e0dddd 0%, rgba(224,224,224,0.68) 100%);
+				h2 {
+					margin:.5em 0 .25em;
 				}
 			}
 		}
