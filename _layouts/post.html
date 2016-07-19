@@ -5,12 +5,11 @@ layout: default
 	<section>
 
 	<article>
-		<header class='post-title'>
-			<h2>
-				<a href='{{ page.url}}'>{{ page.title }}</a>
-			</h2>
-			<p class='date'>{{ page.date | date: "%B %m, %Y "}}</p>
-		</header>
+		<h2 class='post-title'>
+			<a href='{{ page.url}}'>{{ page.title }}</a>
+		</h2>
+		<p class='date'>{{ page.date | date: "%B %m, %Y "}}</p>
+		
 		{{ content }}
 	</article>
 	
