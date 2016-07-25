@@ -103,6 +103,14 @@
 			@include transition(0.1s ease-in);
 			&:hover { @include transition(0.1s ease-out); }
 		}
+		.indented {
+			li {
+				margin-left: 1em;
+			}
+		}
+		.bullets {
+			list-style: disc;
+		}
 
 
 // LAYOUT
