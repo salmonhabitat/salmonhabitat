@@ -105,11 +105,11 @@
 		}
 		.indented {
 			li {
-				margin-left: 1em;
+				margin: .5em 1em .5em 0;
 			}
 		}
-		.bullets {
-			list-style: disc;
+		.bullets li {
+			list-style-type: disc;
 		}
 
 
