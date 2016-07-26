@@ -115,9 +115,10 @@
 		}
 		.float-right {
 			float: right;
+			margin: 0 0 .5em 1em;
 		}
 		.content img.float-right {
-			width: auto;
+			max-width: 280px;
 		}
 
 
