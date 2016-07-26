@@ -112,6 +112,12 @@
 			margin: .5em 0 .5em 1.5em;
 			list-style-type: disc;
 		}
+		.float-right {
+			float: right;
+		}
+		.content img.float-right {
+			width: auto;
+		}
 
 
 // LAYOUT
