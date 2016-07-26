@@ -60,6 +60,7 @@
 		a.button {
 			@extend .transition;
 			@extend .standard-radius;
+			display: inline-block;
 			border: 2px solid $color-brand-dark;
 			background: $color-brand;
 			padding: .5em 1em;
