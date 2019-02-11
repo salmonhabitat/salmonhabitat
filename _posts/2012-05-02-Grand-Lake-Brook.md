@@ -1,7 +1,7 @@
 ---
 title: Grand Lake Brook
 layout: post
-image: "http://salmonhabitat.org/assets/img/projects/watercontrol/DSCF1682.JPG"
+image: "https://salmonhabitat.org/assets/img/projects/watercontrol/DSCF1682.JPG"
 ---
 The Grand Lake Brook connectivity project  was a collaboration between the Downeast Lakes Land Trust, NRCS, USFWS Maine Fish and Wildlife Conservation Office,  and Project SHARE.
 
