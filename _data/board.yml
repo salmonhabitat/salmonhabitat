@@ -1,26 +1,14 @@
-- name: Robert Murphy 
-  title: Chair
+- name: Robert Murphy, Chair
+  title: Forester
   organization: American Forestry Management
 
-- name: John Burrows
-  title: Vice-Chair
+- name: John Burrows, Vice-Chair
+  title: Director, New England Programs
   organization: Atlantic Salmon Federation
 
-- name: Edward Hennessey
-  title: Treasurer
+- name: Edward Hennessey, Treasurer
+  title: CEO
   organization: Machias Savings Bank
-
-- name: Travis Howard
-  title: Forester
-  organization: Wagner Forest Management
-
-- name: Mark Andrews
-  title: Forester
-  organization: Plum Creek
-
-- name: Patrick Sirois
-  title:   
-  organization: Sustainable Forestry Initiative, Maine Forest Products Council
 
 - name: Dan Bowker
   title: Environmental Coordinator
@@ -34,19 +22,32 @@
   title:  Environmental Planner
   organization: The Nature Conservancy
 
-- name: Mike Brown
-  title:   Director of Fisheries
-  organization:  Maine Inland Fish and Wildlife
+- name: Kyle Burdick
+  title: Forester
+  organization: Baskahegan Company
 
-- name: Oliver Cox  
-  title:   Director of the Division of Searun Fisheries
-  organization: Maine Department of Marine Resources
+- name: Patrick Sirois
+  title: Director
+  organization: Maine Sustainable Forestry Initiative Program
 
-- name: Ernie Atkinson 
-  title:  Alternate
-  organization: Marine Resource Scientist
+- name: Sean Ledwin
+  title: Director
+  organization: Maine DMR, Division of Sea-Run Fisheries and Habitat
 
-- name: Tom Gilbert
-  title: Water Resource Forrester
+- name: Thomas Gilbert
+  title: Water Resources Specialist
   organization: Maine Forrest Service
+
+- name: Wade Shorey  
+  title:  Forester
+  organization: Wagner Forest Management
+
+- name: Ernie Atkinson, Alternate
+  title:  Marine Resources Scientist
+  organization: Maine DMR, Division of Sea-Run Fisheries and Habitat
+
+- name: Travis Howard, Alternate
+  title: Forester
+  organization: Wagner Forest Management
+
   
