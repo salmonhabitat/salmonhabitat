@@ -2,7 +2,7 @@
 title: West Branch Brook
 layout: post
 image: "https://salmonhabitat.org/assets/img/projects/West-Brook-Branch-2018-before.jpg"
-image-caption: Looking upstream at the West Branch Brook culvert, photo date: July 29, 2019
+image_caption: "Looking upstream at the West Branch Brook culvert, photo date: July 29, 2019"
 ---
 
 West Branch Brook is a headwater tributary of the Narraguagus River.  The Beddington Lake Hydrologic Unit has been assessed as the top priority focus area for Atlantic salmon restoration in the Narraguagus River.  The 30-00-0 road crossing of West Branch Brook was the largest road crossing project identified within the focus area.  It had been assessed as a velocity barrier to upstream migration of multiple species of fish.  This culvert has been on Project SHARE’s radar for quite some time.  
