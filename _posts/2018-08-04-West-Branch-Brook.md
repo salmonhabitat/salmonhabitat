@@ -10,12 +10,6 @@ A longitudinal profile of the culvert was measured on <a href="/2014/04/02/West-
 
 Funding for replacement of this culvert, and others, was finally approved in 2017 and the planning began.  Replacement began on July 30, 2018 and was completed on August 4, 2018.  The approximately 11-foot diameter steel pipe was replaced with a 32-foot steel and concrete bridge.  
 
-<figure>
-	![Looking upstream at the West Branch Brook culvert, photo date: July 29, 2019.](/assets/img/projects/West-Brook-Branch-2018-before.jpg)
-	<figcaption>Looking upstream at the West Branch Brook culvert, photo date: July 29, 2019</figcaption>
-</figure>
-
-
 
 <div class="responsive-iframe">
 	<iframe width="760" src="https://www.youtube.com/embed/6ZJV6eQI9y4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
