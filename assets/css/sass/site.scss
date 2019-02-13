@@ -132,6 +132,19 @@
 		
 		.content img { width: 100%; }
 		
+		figure {
+			margin: 0;
+			max-width: 100%;
+			@media (min-width: 1200px) {
+				margin: 0 -30%;
+			}
+		}
+		
+		figcaption {
+			text-align: center;
+			font-size: .8em;
+		}
+		
 		.panes {
 			display: inline-block;
 			width: 49%;
