@@ -11,9 +11,12 @@ layout: default
 		<p class='date'>{{ page.date | date: "%B %m, %Y "}}</p>
 
 		{% if page.image %}
-		<div class="featured-image">
+		<figure class="featured-image">
 			<img src="{{ page.image }}" alt="{{ page.title }}" title="{{ page.title }}">
-		</div>
+			{% if page.image-caption %}
+			<figcaption> {{page.image-caption}}</figcaption>
+			{% endif %}
+		</figure>
 		{% endif %}		
 		
 		{{ content }}
