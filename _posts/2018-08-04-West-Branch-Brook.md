@@ -17,7 +17,7 @@ Funding for replacement of this culvert, and others, was finally approved in 201
 </figure>
 
 <figure markdown="1">
-<img src="/assets/img/projects/West-Brook-Branch-2018-bridge-installed alt="New bridge fully installed. Photo date: September 10, 2018." title="New bridge fully installed. Photo date: September 10, 2018.">
+<img src="/assets/img/projects/West-Brook-Branch-2018-bridge-installed.jpg" alt="New bridge fully installed. Photo date: September 10, 2018." title="New bridge fully installed. Photo date: September 10, 2018.">
 <figcaption> New bridge fully installed. Photo date: September 10, 2018. </figcaption>
 </figure>
 
