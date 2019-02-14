@@ -133,15 +133,20 @@
 		.content img { width: 100%; }
 		
 		figure {
-			margin: 0;
+			margin: 2em 0;
+			background: #fafafa;
 			@media (min-width: 1200px) {
-				margin: 0 -30%;
+				margin: 2em -30% 3em;
+			}
+			p {
+				margin: 0;
 			}
 		}
 		
 		figcaption {
 			text-align: center;
 			font-size: .8em;
+			padding: 0 0 1em;
 		}
 		
 		.panes {
