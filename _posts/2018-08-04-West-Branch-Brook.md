@@ -11,15 +11,15 @@ A longitudinal profile of the culvert was measured on <a href="/2014/04/02/West-
 
 Funding for replacement of this culvert, and others, was finally approved in 2017 and the planning began.  Replacement began on July 30, 2018 and was completed on August 4, 2018.  The approximately 11-foot diameter steel pipe was replaced with a 32-foot steel and concrete bridge.  
 
-	<figure>
-		<img src="/assets/img/projects/West-Brook-Branch-2018-culvert-removed.jpg" alt="Culvert was just removed, and the blocks are starting to be set in place. Photo date: August 1, 2018." title="Culvert was just removed, and the blocks are starting to be set in place. Photo date: August 1, 2018.">
-		<figcaption> Culvert was just removed, and the blocks are starting to be set in place. Photo date: August 1, 2018.</figcaption>
-	</figure>
+<figure markdown="1">
+<img src="/assets/img/projects/West-Brook-Branch-2018-culvert-removed.jpg" alt="Culvert was just removed, and the blocks are starting to be set in place. Photo date: August 1, 2018." title="Culvert was just removed, and the blocks are starting to be set in place. Photo date: August 1, 2018.">
+<figcaption> Culvert was just removed, and the blocks are starting to be set in place. Photo date: August 1, 2018.</figcaption>
+</figure>
 
-	<figure>
-		<img src="/assets/img/projects/West-Brook-Branch-2018-bridge-installed alt="New bridge fully installed. Photo date: September 10, 2018." title="New bridge fully installed. Photo date: September 10, 2018.">
-		<figcaption> New bridge fully installed. Photo date: September 10, 2018. </figcaption>
-	</figure>
+<figure markdown="1">
+<img src="/assets/img/projects/West-Brook-Branch-2018-bridge-installed alt="New bridge fully installed. Photo date: September 10, 2018." title="New bridge fully installed. Photo date: September 10, 2018.">
+<figcaption> New bridge fully installed. Photo date: September 10, 2018. </figcaption>
+</figure>
 
 
 <div class="responsive-iframe">
