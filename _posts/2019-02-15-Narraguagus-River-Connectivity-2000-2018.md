@@ -39,4 +39,5 @@ Below you will find a series of maps that show the connectivity of catchments in
 ![](/assets/img/projects/Narraguagus-River/2012_UNG_Conn.jpg)
 ![](/assets/img/projects/Narraguagus-River/2014_UNG_Conn.jpg)
 ![](/assets/img/projects/Narraguagus-River/2016_UNG_Conn.jpg)
+![](/assets/img/projects/Narraguagus-River/2018_UNG_Conn.jpg)
 
