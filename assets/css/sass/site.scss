@@ -135,6 +135,10 @@
 		figure {
 			margin: 2em 0;
 			background: #fafafa;
+			transition: margin .23s ease-out;
+			@media (min-width: 840px) {
+				margin: 1em -15% 2em;
+			}
 			@media (min-width: 1200px) {
 				margin: 2em -30% 3em;
 			}
